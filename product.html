@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/main.css" />
+  <link rel="stylesheet" href="./css/product.css" />
+  <title>RUSSMALL.RU - Shop online in SECONDS!</title>
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="header__top text-13 text-gray">
+        <div class="header__top-location">
+          <i class="bi bi-geo-alt"></i>
+          <span>Москва</span>
+        </div>
+        <div class="header__top-links">
+          <a href="./contact.html" class="header__top-link">Доставка</a>
+          <a href="./contact.html" class="header__top-link">Сервис</a>
+          <a href="./contact.html" class="header__top-link">Дополнительные гарантии</a>
+        </div>
+      </div>
+      <div class="header__main">
+        <a href="./products.html" class="header__main-logo">
+          <img src="./images/logo.png" alt="RUSSMALL.RU" class="header__main-logo-img" />
+        </a>
+        <form action="./products.html" class="header__main-search text-14">
+          <input type="search" name="search" placeholder="Искать на RUSSMALL" class="header__main-input" />
+          <button class="header__main-btn">
+            <i class="bi bi-search"></i>
+            <span>Поиск</span>
+          </button>
+        </form>
+        <div class="header__main-details text-12 text-gray">
+          <a href="./contact.html" class="header__main-contact">
+            <span class="header__main-tel text-20">+7 (495) 215-51-77</span>
+            <span class="header__main-worktime">09:00 - 21:00 (пн-пт) 09:00 - 20:00 (сб-вс)</span>
+          </a>
+          <a href="./contact.html" class="header__main-linkbtn on-mobile">
+            <i class="bi bi-telephone"></i>
+          </a>
+          <a href="./cart.html" class="header__main-linkbtn">
+            <i class="bi bi-person-circle"></i>
+            <span>Войти</span>
+          </a>
+          <a href="./cart.html" class="header__main-linkbtn">
+            <span class="header__cart-num">1</span>
+            <i class="bi bi-cart"></i>
+            <span>Корзина</span>
+          </a>
+          <button id="open-nav" class="header__main-linkbtn on-mobile">
+            <i class="bi bi-list"></i>
+          </button>
+        </div>
+      </div>
+      <div class="header__links text-15">
+        <a href="./products.html" class="header__links-openbtn">
+          <i class="bi bi-text-left"></i>
+          <span class="text-15">Все категории</span>
+        </a>
+        <div class="header__links-wrapper">
+          <a href="./products.html" class="header__link">Бытовая техника</a>
+          <a href="./products.html" class="header__link">ТВ. аудио, видео</a>
+          <a href="./products.html" class="header__link">Компьютерная техника</a>
+          <a href="./products.html" class="header__link">Садовая техника и интсрументы</a>
+        </div>
+      </div>
+      <div id="mobile-nav" class="header__mobile closed">
+        <div class="header__mobile-wrapper">
+          <button class="close-nav header__mobile-close">
+            <i class="bi bi-x close-nav"></i>
+          </button>
+          <div class="header__mobile-links text-15">
+            <a href="./products.html" class="header__mobile-link">
+              <div class="header__mobile-link-starter">
+                <i class="bi bi-geo-alt text-blue"></i>
+                <span>Москва</span>
+              </div>
+              <i class="bi bi-arrow-right"></i>
+            </a>
+            <a href="./products.html" class="header__mobile-link">
+              <div class="header__mobile-link-starter">
+                <i class="bi bi-text-left text-red"></i>
+                <span>Все категории</span>
+              </div>
+              <i class="bi bi-arrow-right"></i>
+            </a>
+            <a href="./contact.html" class="header__mobile-link">Доставка</a>
+            <a href="./contact.html" class="header__mobile-link">Сервис</a>
+            <a href="./contact.html" class="header__mobile-link">Дополнительные гарантии</a>
+            <a href="./contact.html" class="header__mobile-link">
+              <span class="text-20">+7 (495) 215-51-77</span>
+              <span class="text-12">09:00 - 21:00 (пн-пт) 09:00 - 20:00 (сб-вс)</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <ul class="routes">
+      <li class="routes__item link">
+        <a href="./index.html">Главная</a>
+      </li>
+      <li class="routes__item">/</li>
+      <li class="routes__item link">
+        <a href="./index.html">Крупная бытовая техника</a>
+      </li>
+      <li class="routes__item">/</li>
+      <li class="routes__item link">
+        <a href="./products.html">ХолодилПылесосыьники</a>
+      </li>
+      <li class="routes__item">/</li>
+      <li class="routes__item active bi">ПЫЛЕСОС ZELMER ZVC315HP</li>
+    </ul>
+
+    <div class="product">
+      <div class="product__gallery">
+        <div class="product__gallery-label-1">Акция</div>
+        <div class="product__gallery-label-2">Подарок</div>
+        <img src="./images/product-full.png" alt="Product" class="product__gallery-main" />
+        <div class="product__gallery-images">
+          <button class="bi bi-chevron-left product__gallery-move-btn" id="slide-left"></button>
+          <button class="bi bi-chevron-right product__gallery-move-btn" id="slide-right"></button>
+        </div>
+      </div>
+      <div class="product__details">
+        <div class="product__details-header">
+          <div class="product__details-intro">
+            <h1 class="product__details-name">ПЫЛЕСОС ZELMER ZVC315HP</h1>
+            <p class="product__details-category">Код товара 16-123250-A</p>
+          </div>
+          <div class="product__details-rate">
+            <div class="product__rates">
+              <div class="product__stars">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <span class="product__rate-num">23 отзыва</span>
+            </div>
+            <div class="product__save">
+              <button class="product__save-btn">
+                <i class="bi bi-heart"></i>
+              </button>
+              <button class="product__save-btn">
+                <i class="bi bi-list-columns"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="product__gallery product__gallery-mobile">
+          <div class="product__gallery-label-1">Акция</div>
+          <div class="product__gallery-label-2">Подарок</div>
+          <img src="./images/product-full.png" alt="Product" class="product__gallery-main" />
+        </div>
+        <div class="product__action">
+          <div class="product__prices-qty">
+            <div class="product__prices">
+              <h2 class="product__price">14 300 ₽</h2>
+              <span class="product__nodiscount">18 000 ₽</span>
+            </div>
+            <div class="product__qty">
+              <button class="product__qty-dec">-</button>
+              <input type="number" class="product__qty-num" value="1" placeholder="2">
+              <button class="product__qty-inc">+</button>
+            </div>
+          </div>
+          <div class="product__action-btns">
+            <a href="./cart.html" class="product__action-btn outline">Купить в 1 клик</a>
+            <a href="./cart.html" class="product__action-btn">В корзину</a>
+          </div>
+        </div>
+        <div class="product__features">
+          <div class="product__feature">
+            <i class="product__feature-icon bi bi-truck"></i>
+            <div class="product__feature-details">
+              <a href="./contact.html" class="product__feature-name">Доставка (Москва)</a>
+              <p class="product__feature-text">Доставка доступна: на Завтра (Суббота (10.12) с 10:00 до 23:00)</p>
+              <p class="product__feature-text">Интервал доставки: с 10:00 до 23:00</p>
+              <p class="product__feature-text">Стоимость: 300 ₽.</p>
+            </div>
+          </div>
+          <div class="product__feature">
+            <i class="product__feature-icon bi bi-gear-fill"></i>
+            <div class="product__feature-details">
+              <a href="./contact.html" class="product__feature-name">Сопутствующие услуги</a>
+              <p class="product__feature-text"><b>Дополнительный сервис</b></p>
+              <div class="product__feature-radios">
+                <div class="product__feature-radio">
+                  <span>3 год</span>
+                  <input checked type="radio" name="radio-1" id="radio-1" />
+                  <label for="radio-1" class="filters__card-item">+ 1320 ₽</label>
+                </div>
+                <div class="product__feature-radio">
+                  <span>2 год</span>
+                  <input type="radio" name="radio-1" id="radio-2" />
+                  <label for="radio-2" class="filters__card-item">+ 1350 ₽</label>
+                </div>
+                <div class="product__feature-radio">
+                  <span>3 год</span>
+                  <input type="radio" name="radio-1" id="radio-3" />
+                  <label for="radio-3" class="filters__card-item">+ 1510 ₽</label>
+                </div>
+                <div class="product__feature-radio">
+                  <span>4 год</span>
+                  <input type="radio" name="radio-1" id="radio-4" />
+                  <label for="radio-4" class="filters__card-item">+ 1510 ₽</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product__feature">
+            <i class="product__feature-icon bi bi-truck"></i>
+            <div class="product__feature-details">
+              <a href="./contact.html" class="product__feature-name">Доставка (Москва)</a>
+              <p class="product__feature-text">Наличный расчет (физ.лица)</p>
+            </div>
+          </div>
+          <div class="product__feature">
+            <i class="product__feature-icon bi bi-truck"></i>
+            <div class="product__feature-details">
+              <a href="./contact.html" class="product__feature-name">Доставка (Москва)</a>
+              <p class="product__feature-text">Вы можете вернуть товар в течение 7 дней</p>
+            </div>
+          </div>
+          <div class="product__feature">
+            <i class="product__feature-icon bi bi-truck"></i>
+            <div class="product__feature-details">
+              <a href="./contact.html" class="product__feature-name">Доставка (Москва)</a>
+              <p class="product__feature-text">Стоимость вывоза - 250 руб.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="characters">
+      <h2 class="category-title characters__title">Характеристики</h2>
+      <ul class="characters__list">
+        <li class="characters__item">
+          <span class="characters__name">Тип</span>
+          <span class="characters__value">традиционный</span>
+        </li>
+        <li class="characters__item">
+          <span class="characters__name">Тип уборки</span>
+          <span class="characters__value">сухая</span>
+        </li>
+        <li class="characters__item">
+          <span class="characters__name">Пылесборник</span>
+          <span class="characters__value">1.20 л</span>
+        </li>
+        <li class="characters__item">
+          <span class="characters__name">Фильтр тонкой очистки</span>
+          <span class="characters__value">есть</span>
+        </li>
+        <li class="characters__item">
+          <span class="characters__name">Потребляемая мощность</span>
+          <span class="characters__value">700 Вт</span>
+        </li>
+        <li class="characters__item">
+          <span class="characters__name">Уровень шума</span>
+          <span class="characters__value">77 дБ</span>
+        </li>
+        <li class="characters__item">
+          <span class="characters__name">Дополнительная информация</span>
+          <span class="characters__value">HEPA H13</span>
+        </li>
+      </ul>
+      <span class="characters__more">Больше параметров</span>
+    </div>
+
+    <div class="rates">
+      <div class="rates__right">
+        <h3 class="rates__title">Отзывы</h3>
+        <span class="rates__result"><b>4.7</b>/<b>5</b></span>
+        <div class="rates__stars">
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+        </div>
+        <span class="rates__total">на основе 68 отзывов</span>
+      </div>
+      <button class="rates__btn">Написать отзыв</button>
+    </div>
+    <div class="reviews">
+      <button hidden class="bi bi-chevron-left reviews-left-btn"></button>
+      <button class="bi bi-chevron-right reviews-right-btn"></button>
+      <div class="reviews__list">
+        <div class="reviews__item">
+          <div class="review__details">
+            <div class="review__author">
+              <div class="review__author-pic">H</div>
+              <div class="review__author-date">
+                <span class="review__author-name">Наталья</span>
+                <span class="review__author-date">01.12.2019</span>
+              </div>
+            </div>
+            <div class="review__stars">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+            </div>
+          </div>
+          <p class="review__content">
+            Брала в подарок любительнице Apple, осталась довольна. Всё новое и запакованное, заряжается тоже нормально.
+            К
+            ним ещё взяла чехол, все счастливы.
+          </p>
+        </div>
+        <div class="reviews__item">
+          <div class="review__details">
+            <div class="review__author">
+              <div class="review__author-pic">H</div>
+              <div class="review__author-date">
+                <span class="review__author-name">Наталья</span>
+                <span class="review__author-date">01.12.2019</span>
+              </div>
+            </div>
+            <div class="review__stars">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+            </div>
+          </div>
+          <p class="review__content">
+            Брала в подарок любительнице Apple, осталась довольна. Всё новое и запакованное, заряжается тоже нормально.
+            К
+            ним ещё взяла чехол, все счастливы.
+          </p>
+        </div>
+        <div class="reviews__item">
+          <div class="review__details">
+            <div class="review__author">
+              <div class="review__author-pic">H</div>
+              <div class="review__author-date">
+                <span class="review__author-name">Наталья</span>
+                <span class="review__author-date">01.12.2019</span>
+              </div>
+            </div>
+            <div class="review__stars">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+            </div>
+          </div>
+          <p class="review__content">
+            Брала в подарок любительнице Apple, осталась довольна. Всё новое и запакованное, заряжается тоже нормально.
+            К
+            ним ещё взяла чехол, все счастливы.
+          </p>
+        </div>
+        <div class="reviews__item">
+          <div class="review__details">
+            <div class="review__author">
+              <div class="review__author-pic">H</div>
+              <div class="review__author-date">
+                <span class="review__author-name">Наталья</span>
+                <span class="review__author-date">01.12.2019</span>
+              </div>
+            </div>
+            <div class="review__stars">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+            </div>
+          </div>
+          <p class="review__content">
+            Брала в подарок любительнице Apple, осталась довольна. Всё новое и запакованное, заряжается тоже нормально.
+            К
+            ним ещё взяла чехол, все счастливы.
+          </p>
+        </div>
+        <div class="reviews__item">
+          <div class="review__details">
+            <div class="review__author">
+              <div class="review__author-pic">H</div>
+              <div class="review__author-date">
+                <span class="review__author-name">Наталья</span>
+                <span class="review__author-date">01.12.2019</span>
+              </div>
+            </div>
+            <div class="review__stars">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+            </div>
+          </div>
+          <p class="review__content">
+            Брала в подарок любительнице Apple, осталась довольна. Всё новое и запакованное, заряжается тоже нормально.
+            К
+            ним ещё взяла чехол, все счастливы.
+          </p>
+        </div>
+        <div class="reviews__item">
+          <div class="review__details">
+            <div class="review__author">
+              <div class="review__author-pic">H</div>
+              <div class="review__author-date">
+                <span class="review__author-name">Наталья</span>
+                <span class="review__author-date">01.12.2019</span>
+              </div>
+            </div>
+            <div class="review__stars">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+            </div>
+          </div>
+          <p class="review__content">
+            Брала в подарок любительнице Apple, осталась довольна. Всё новое и запакованное, заряжается тоже нормально.
+            К
+            ним ещё взяла чехол, все счастливы.
+          </p>
+        </div>
+        <div class="reviews__item">
+          <div class="review__details">
+            <div class="review__author">
+              <div class="review__author-pic">H</div>
+              <div class="review__author-date">
+                <span class="review__author-name">Наталья</span>
+                <span class="review__author-date">01.12.2019</span>
+              </div>
+            </div>
+            <div class="review__stars">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+            </div>
+          </div>
+          <p class="review__content">
+            Брала в подарок любительнице Apple, осталась довольна. Всё новое и запакованное, заряжается тоже нормально.
+            К
+            ним ещё взяла чехол, все счастливы.
+          </p>
+        </div>
+        <div class="reviews__item">
+          <div class="review__details">
+            <div class="review__author">
+              <div class="review__author-pic">H</div>
+              <div class="review__author-date">
+                <span class="review__author-name">Наталья</span>
+                <span class="review__author-date">01.12.2019</span>
+              </div>
+            </div>
+            <div class="review__stars">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+            </div>
+          </div>
+          <p class="review__content">
+            Брала в подарок любительнице Apple, осталась довольна. Всё новое и запакованное, заряжается тоже нормально.
+            К
+            ним ещё взяла чехол, все счастливы.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="products">
+      <h2 class="section__title">Выгодные предложения</h2>
+      <button id="products-moveright" class="products__movebtn">
+        <i class="bi bi-chevron-right"></i>
+      </button>
+      <button id="products-moveleft" class="products__movebtn">
+        <i class="bi bi-chevron-left"></i>
+      </button>
+      <div class="products__list">
+        <a href="./product.html" class="products__item">
+          <img src="./images/product.png" alt="Product" class="products__item-img" />
+          <h4 class="products__item-name">Водонагреватель Electrolux EWH 80 Formax</h4>
+          <div class="products__item-prices">
+            <p class="products__item-price">14 300 ₽</p>
+            <span class="products__item-nodiscount">18 000 ₽</span>
+          </div>
+          <div class="products__item-actions">
+            <button class="products__item-buybtn">Купить</button>
+            <button class="products__item-actionbtn">
+              <i class="bi bi-heart"></i>
+            </button>
+            <button class="products__item-actionbtn">
+              <i class="bi bi-list-columns"></i>
+            </button>
+          </div>
+        </a>
+        <a href="./product.html" class="products__item">
+          <img src="./images/product.png" alt="Product" class="products__item-img" />
+          <h4 class="products__item-name">Водонагреватель Electrolux EWH 80 Formax</h4>
+          <div class="products__item-prices">
+            <p class="products__item-price">14 300 ₽</p>
+            <span class="products__item-nodiscount">18 000 ₽</span>
+          </div>
+          <div class="products__item-actions">
+            <button class="products__item-buybtn">Купить</button>
+            <button class="products__item-actionbtn">
+              <i class="bi bi-heart"></i>
+            </button>
+            <button class="products__item-actionbtn">
+              <i class="bi bi-list-columns"></i>
+            </button>
+          </div>
+        </a>
+        <a href="./product.html" class="products__item">
+          <img src="./images/product.png" alt="Product" class="products__item-img" />
+          <h4 class="products__item-name">Водонагреватель Electrolux EWH 80 Formax</h4>
+          <div class="products__item-prices">
+            <p class="products__item-price">14 300 ₽</p>
+            <span class="products__item-nodiscount">18 000 ₽</span>
+          </div>
+          <div class="products__item-actions">
+            <button class="products__item-buybtn">Купить</button>
+            <button class="products__item-actionbtn">
+              <i class="bi bi-heart"></i>
+            </button>
+            <button class="products__item-actionbtn">
+              <i class="bi bi-list-columns"></i>
+            </button>
+          </div>
+        </a>
+        <a href="./product.html" class="products__item">
+          <img src="./images/product.png" alt="Product" class="products__item-img" />
+          <h4 class="products__item-name">Водонагреватель Electrolux EWH 80 Formax</h4>
+          <div class="products__item-prices">
+            <p class="products__item-price">14 300 ₽</p>
+            <span class="products__item-nodiscount">18 000 ₽</span>
+          </div>
+          <div class="products__item-actions">
+            <button class="products__item-buybtn">Купить</button>
+            <button class="products__item-actionbtn">
+              <i class="bi bi-heart"></i>
+            </button>
+            <button class="products__item-actionbtn">
+              <i class="bi bi-list-columns"></i>
+            </button>
+          </div>
+        </a>
+        <a href="./product.html" class="products__item">
+          <img src="./images/product.png" alt="Product" class="products__item-img" />
+          <h4 class="products__item-name">Водонагреватель Electrolux EWH 80 Formax</h4>
+          <div class="products__item-prices">
+            <p class="products__item-price">14 300 ₽</p>
+            <span class="products__item-nodiscount">18 000 ₽</span>
+          </div>
+          <div class="products__item-actions">
+            <button class="products__item-buybtn">Купить</button>
+            <button class="products__item-actionbtn">
+              <i class="bi bi-heart"></i>
+            </button>
+            <button class="products__item-actionbtn">
+              <i class="bi bi-list-columns"></i>
+            </button>
+          </div>
+        </a>
+        <a href="./product.html" class="products__item">
+          <img src="./images/product.png" alt="Product" class="products__item-img" />
+          <h4 class="products__item-name">Водонагреватель Electrolux EWH 80 Formax</h4>
+          <div class="products__item-prices">
+            <p class="products__item-price">14 300 ₽</p>
+            <span class="products__item-nodiscount">18 000 ₽</span>
+          </div>
+          <div class="products__item-actions">
+            <button class="products__item-buybtn">Купить</button>
+            <button class="products__item-actionbtn">
+              <i class="bi bi-heart"></i>
+            </button>
+            <button class="products__item-actionbtn">
+              <i class="bi bi-list-columns"></i>
+            </button>
+          </div>
+        </a>
+        <a href="./product.html" class="products__item">
+          <img src="./images/product.png" alt="Product" class="products__item-img" />
+          <h4 class="products__item-name">Водонагреватель Electrolux EWH 80 Formax</h4>
+          <div class="products__item-prices">
+            <p class="products__item-price">14 300 ₽</p>
+            <span class="products__item-nodiscount">18 000 ₽</span>
+          </div>
+          <div class="products__item-actions">
+            <button class="products__item-buybtn">Купить</button>
+            <button class="products__item-actionbtn">
+              <i class="bi bi-heart"></i>
+            </button>
+            <button class="products__item-actionbtn">
+              <i class="bi bi-list-columns"></i>
+            </button>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container footer__container">
+      <div class="footer__linkcards">
+        <div class="footer__linkcard text-20">
+          <a href="./index.html">
+            <img src="./images/logo-white.png" alt="RUSSMALL.RU" class="footer__linkcard-logo" />
+          </a>
+          <a class="footer__linkcard-contact" href="tel:+74952155177" target="_blank">+7 (495) 215-51-77</a>
+          <a class="footer__linkcard-contact" href="mailto:info@russmall.ru" target="_blank">info@russmall.ru</a>
+        </div>
+        <div class="footer__linkcard text-16">
+          <a href="./products.html" class="footer__link">Доставка</a>
+          <a href="./products.html" class="footer__link">Прием товара</a>
+          <a href="./products.html" class="footer__link">Провер пикселей</a>
+          <a href="./products.html" class="footer__link">О нас</a>
+        </div>
+        <div class="footer__linkcard text-16">
+          <a href="./products.html" class="footer__link">Поставщикам</a>
+          <a href="./products.html" class="footer__link">Оптовым клиентам</a>
+          <a href="./products.html" class="footer__link">Пожаловаться руководству</a>
+        </div>
+        <div class="footer__linkcard">
+          <span class="footer__linkcard-contactitle text-16">У вас остались вопросы?</span>
+          <a href="./contact.html" class="footer__linkcard-contactbtn text-16">Оставить заявку</a>
+          <div class="footer__linkcard-social text-20">
+            <a href="https://www.whatsapp.com" target="_blank">
+              <i class="bi bi-whatsapp"></i>
+            </a>
+            <a href="https://web.telegram.org/k" target="_blank">
+              <i class="bi bi-telegram"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <p class="footer__copyright-text text-14">
+        Обращаем Ваше внимание на то, что данный интернет-сайт носит исключительно информационный характер и ни при
+        каких условиях информационные материалы и цены, размещенные на сайте, не являются публичной офертой,
+        определяемой положениями Статьи 437 Гражданского кодекса РФ.
+      </p>
+    </div>
+  </footer>
+
+  <script src="./js/main.js"></script>
+  <script src="./js/product.js"></script>
+</body>
+
+</html>

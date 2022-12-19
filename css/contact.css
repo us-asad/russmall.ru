@@ -1,0 +1,258 @@
+.contact {
+  display: flex;
+  gap: 100px;
+}
+
+.contact__details,
+.contact__msg {
+  width: 50%;
+}
+
+.contact__details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 20px;
+  margin-top: 20px;
+}
+
+.contact__details-card {
+  width: 45%;
+}
+
+.contact__details-name {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.contact__msg-title {
+  font-size: 24px;
+  font-weight: 400;
+  color: #1E1E1E;  
+}
+
+.contact__msg-form {
+  margin-top: 13px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px 0;
+}
+
+
+.contact__msg-btn {
+  padding: 20px 60px;
+  background-color: var(--main-red);
+  border-radius: 30px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  width: max-content;
+  margin-top: 10px;
+  display: block;
+  margin-left: auto;
+}
+
+.map {
+  margin-top: 100px;
+}
+
+.map iframe {
+  width: 100%;
+  height: 350px;
+}
+
+@media (max-width: 900px) {
+  .contact {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 800px) {
+  .contact {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .contact__details,
+  .contact__msg {
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .contact__details-card {
+    width: 100%;
+  }
+
+  .map {
+    padding: 0;
+
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

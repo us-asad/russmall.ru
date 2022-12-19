@@ -1,0 +1,333 @@
+.cart {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.cart__right {
+  width: 69%;
+}
+
+.cart__checkout {
+  width: 34%;
+}
+
+.cart__products {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.cart__products-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.cart__products-img {
+  width: 108px;
+  height: 91px;
+  object-fit: contain;
+}
+
+.cart__products-details {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.cart__products-name {
+  font-size: 18px;
+  font-weight: 400;
+  color: #1E1E1E;
+}
+
+.cart__products-category {
+  color: #6E6E6E;
+  font-size: 15px;
+}
+
+.cart__products-delete {
+  font-size: 15px;
+  color: #6E6E6E;
+  text-decoration: underline;
+  height: 100%;
+}
+
+.cart__products-prices {
+  display: flex;
+  flex-direction: column;
+}
+
+.cart__products-price {
+  font-size: 30px;
+  color: #404040;
+  font-weight: 600;
+}
+
+.cart__products-nodiscounted {
+  font-size: 18px;
+  font-weight: 600;
+  color: #6E6E6E;
+  text-decoration: line-through;
+}
+
+
+.cart__checkout {
+  padding: 30px 42px;
+  border-radius: 15px;
+}
+
+.cart__checkout-title {
+  font-size: 24px;
+  font-weight: 400;
+  color: #1E1E1E
+}
+
+.cart__checkout-items {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.cart__checkout-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cart__checkout-total {
+  margin-top: 10px;
+  padding-top: 20px;
+  border-top: 1px solid #D4D4D4;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 27px;
+}
+
+.cart__checkout-btn {
+  padding: 20px;
+  width: 100%;
+  display: block;
+  background-color: var(--main-red);
+  color: #fff;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.cart__select-cards {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cart__select-cart {
+  width: 48%;
+  padding: 25px 31px;
+  border-radius: 15px;
+}
+
+.cart__select-mains,
+.cart__select-others {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.cart__select-main {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cart__select-others {
+  margin-top: 20px;
+  align-items: center;
+}
+
+.cart__details {
+  margin-top: 30px;
+  padding: 25px 31px;
+  border-radius: 15px;
+}
+
+.cart__details-inputs {
+  padding-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 20px;
+}
+
+.cart__details-radios {
+  margin: 30px 0;
+  display: flex;
+  gap: 50px;
+}
+
+@media (max-width: 1100px) {
+  .cart {
+    flex-direction: column;
+  }
+
+  .cart__right,
+  .cart__checkout {
+    width: 100%;
+  }
+}
+
+
+@media (max-width: 700px) {
+  .cart__products-item {
+    flex-wrap: wrap;
+  }
+
+  .cart__products-details,
+  .cart__products-img {
+    width: 50%;
+  }
+
+  .cart__products-delete,
+  .cart__products-prices {
+    order: 1;
+  }
+
+  .cart__products-delete,
+  .product__qty,
+  .cart__products-prices {
+    width: 32%;
+  }
+
+  .cart__products-item {
+    row-gap: 10px;
+  }
+
+  .cart__select-cards {
+    flex-direction: column;
+  }
+
+  .cart__select-cart {
+    width: 100%;
+  }
+}
+
+@media (max-width: 400px) {
+  .cart__products-price {
+    font-size: 20px;
+  }
+
+  .cart__products-nodiscounted {
+    font-size: 12px;
+  }
+
+  .product__qty-num {
+    width: 40px;
+    height: 40px;
+  }
+
+  .cart__products-delete {
+    font-size: 13px;
+  }
+
+  .cart__products-name {
+    font-size: 17px;
+  }
+
+  .cart__products-category {
+    font-size: 14px;
+  }
+
+  .cart__products-img {
+    width: 40%;
+  }
+
+  .cart__products-details {
+    width: 55%;
+  }
+
+  .cart__select-cards {
+    font-size: 13px;
+  }
+
+  .cart__select-cart,
+  .cart__details,
+  .cart__checkout {
+    padding: 25px 7px;
+  }
+
+  .cart__details-radios {
+    flex-direction: column;
+    gap: 13px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

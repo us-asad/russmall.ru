@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/main.css" />
+  <link rel="stylesheet" href="./css/cart.css" />
+  <title>RUSSMALL.RU - Shop online in SECONDS!</title>
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="header__top text-13 text-gray">
+        <div class="header__top-location">
+          <i class="bi bi-geo-alt"></i>
+          <span>Москва</span>
+        </div>
+        <div class="header__top-links">
+          <a href="./contact.html" class="header__top-link">Доставка</a>
+          <a href="./contact.html" class="header__top-link">Сервис</a>
+          <a href="./contact.html" class="header__top-link">Дополнительные гарантии</a>
+        </div>
+      </div>
+      <div class="header__main">
+        <a href="./products.html" class="header__main-logo">
+          <img src="./images/logo.png" alt="RUSSMALL.RU" class="header__main-logo-img" />
+        </a>
+        <form action="./products.html" class="header__main-search text-14">
+          <input type="search" name="search" placeholder="Искать на RUSSMALL" class="header__main-input" />
+          <button class="header__main-btn">
+            <i class="bi bi-search"></i>
+            <span>Поиск</span>
+          </button>
+        </form>
+        <div class="header__main-details text-12 text-gray">
+          <a href="./contact.html" class="header__main-contact">
+            <span class="header__main-tel text-20">+7 (495) 215-51-77</span>
+            <span class="header__main-worktime">09:00 - 21:00 (пн-пт) 09:00 - 20:00 (сб-вс)</span>
+          </a>
+          <a href="./contact.html" class="header__main-linkbtn on-mobile">
+            <i class="bi bi-telephone"></i>
+          </a>
+          <a href="./cart.html" class="header__main-linkbtn">
+            <i class="bi bi-person-circle"></i>
+            <span>Войти</span>
+          </a>
+          <a href="./cart.html" class="header__main-linkbtn">
+            <span class="header__cart-num">1</span>
+            <i class="bi bi-cart"></i>
+            <span>Корзина</span>
+          </a>
+          <button id="open-nav" class="header__main-linkbtn on-mobile">
+            <i class="bi bi-list"></i>
+          </button>
+        </div>
+      </div>
+      <div class="header__links text-15">
+        <a href="./products.html" class="header__links-openbtn">
+          <i class="bi bi-text-left"></i>
+          <span class="text-15">Все категории</span>
+        </a>
+        <div class="header__links-wrapper">
+          <a href="./products.html" class="header__link">Бытовая техника</a>
+          <a href="./products.html" class="header__link">ТВ. аудио, видео</a>
+          <a href="./products.html" class="header__link">Компьютерная техника</a>
+          <a href="./products.html" class="header__link">Садовая техника и интсрументы</a>
+        </div>
+      </div>
+      <div id="mobile-nav" class="header__mobile closed">
+        <div class="header__mobile-wrapper">
+          <button class="close-nav header__mobile-close">
+            <i class="bi bi-x close-nav"></i>
+          </button>
+          <div class="header__mobile-links text-15">
+            <a href="./products.html" class="header__mobile-link">
+              <div class="header__mobile-link-starter">
+                <i class="bi bi-geo-alt text-blue"></i>
+                <span>Москва</span>
+              </div>
+              <i class="bi bi-arrow-right"></i>
+            </a>
+            <a href="./products.html" class="header__mobile-link">
+              <div class="header__mobile-link-starter">
+                <i class="bi bi-text-left text-red"></i>
+                <span>Все категории</span>
+              </div>
+              <i class="bi bi-arrow-right"></i>
+            </a>
+            <a href="./contact.html" class="header__mobile-link">Доставка</a>
+            <a href="./contact.html" class="header__mobile-link">Сервис</a>
+            <a href="./contact.html" class="header__mobile-link">Дополнительные гарантии</a>
+            <a href="./contact.html" class="header__mobile-link">
+              <span class="text-20">+7 (495) 215-51-77</span>
+              <span class="text-12">09:00 - 21:00 (пн-пт) 09:00 - 20:00 (сб-вс)</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <ul class="routes">
+      <li class="routes__item link">
+        <a href="./index.html">Главная</a>
+      </li>
+      <li class="routes__item">/</li>
+      <li class="routes__item active">Корзина</li>
+    </ul>
+    <h1 class="category-title">Корзина</h1>
+    <div class="cart">
+      <div class="cart__right">
+        <div class="cart__products">
+          <div class="cart__products-item">
+            <img
+              src="./images/product-full.png"
+              alt="Product"
+              class="cart__products-img"
+            />
+            <div class="cart__products-details">
+              <a href="./product.html" class="cart__products-name">Пылесос ZELMER ZVC315HP</a>
+              <p class="cart__products-category">Код товара 16-123250-A</p>
+            </div>
+            <button class="cart__products-delete">Удалить</button>
+            <div class="product__qty">
+              <button class="product__qty-dec">-</button>
+              <input type="number" class="product__qty-num" value="1" placeholder="2">
+              <button class="product__qty-inc">+</button>
+            </div>
+            <div class="cart__products-prices">
+              <span class="cart__products-nodiscounted">18 000 ₽</span>
+              <span class="cart__products-price">14 300 ₽</span>
+            </div>
+          </div>
+          <div class="cart__products-item">
+            <img
+              src="./images/product-full.png"
+              alt="Product"
+              class="cart__products-img"
+            />
+            <div class="cart__products-details">
+              <a href="./product.html" class="cart__products-name">Пылесос ZELMER ZVC315HP</a>
+              <p class="cart__products-category">Код товара 16-123250-A</p>
+            </div>
+            <button class="cart__products-delete">Удалить</button>
+            <div class="product__qty">
+              <button class="product__qty-dec">-</button>
+              <input type="number" class="product__qty-num" value="1" placeholder="2">
+              <button class="product__qty-inc">+</button>
+            </div>
+            <div class="cart__products-prices">
+              <span class="cart__products-nodiscounted">18 000 ₽</span>
+              <span class="cart__products-price">14 300 ₽</span>
+            </div>
+          </div>
+        </div>
+        <div class="cart__select-cards">
+          <div class="cart__select-cart">
+            <h3 class="cart__checkout-title">Способ доставки</h3>
+            <div class="cart__select-mains">
+              <div class="cart__select-main ">
+                <div class="radio-wrapper">
+                  <input checked id="radio-1" type="radio" name="first" />
+                  <label for="radio-1" class="radio-label">Доставка курьером</label>
+                </div>
+                <span class="text-blue">10-13 декабря</span>
+              </div>
+              <div class="cart__select-main ">
+                <div class="radio-wrapper">
+                  <input id="radio-2" type="radio" name="first" />
+                  <label for="radio-2" class="radio-label">Самовывоз</label>
+                </div>
+                <span class="text-blue">Сегодня</span>
+              </div>
+            </div>
+            <div class="cart__select-others">
+              <div class="radio-wrapper">
+                <input checked id="radio-6" type="radio" name="third" />
+                <label for="radio-6" class="radio-label">г. Минск, ул. Набережная 28, пом 54</label>
+              </div>
+              <div class="radio-wrapper">
+                <input id="radio-7" type="radio" name="third" />
+                <label for="radio-7" class="radio-label">г. Минск, ул. Набережная 28, пом 54</label>
+              </div>
+            </div>
+          </div>
+          <div class="cart__select-cart">
+            <h3 class="cart__checkout-title">Способ оплаты</h3>
+            <div class="cart__select-mains">
+              <div class="cart__select-main">
+                <div class="radio-wrapper">
+                  <input id="radio-8" type="radio" name="fourth" />
+                  <label for="radio-8" class="radio-label">Оплата онлайн</label>
+                </div>
+              </div>
+              <div class="cart__select-main">
+                <div class="radio-wrapper">
+                  <input checked id="radio-9" type="radio" name="fourth" />
+                  <label for="radio-9" class="radio-label">Оплата при получении картой</label>
+                </div>
+              </div>
+              <div class="cart__select-main">
+                <div class="radio-wrapper">
+                  <input id="radio-10" type="radio" name="fourth" />
+                  <label for="radio-10" class="radio-label">Оплата при получении онлайн</label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cart__details">
+          <h3 class="cart__checkout-title">Контактные данные</h3>
+          <div class="cart__details-inputs">
+            <label class="contact-label">
+              <span>Телефон *</span>
+              <input
+                type="text"
+                placeholder="+795 458 55 46"
+                class="contact-input"
+              />
+            </label>
+            <label class="contact-label">
+              <span>Email *</span>
+              <input
+                type="email"
+                placeholder="hello@mail.com"
+                class="contact-input"
+              />
+            </label>
+            <label class="contact-label">
+              <span>Ваше имя *</span>
+              <input
+                type="text"
+                placeholder="Andrey"
+                class="contact-input"
+              />
+            </label>
+            <label class="contact-label">
+              <span>Ваша фамилия</span>
+              <input
+                type="text"
+                placeholder="Medvedov"
+                class="contact-input"
+              />
+            </label>
+            <label class="contact-label">
+              <span>Ваш город *</span>
+              <input
+                type="text"
+                placeholder="2022"
+                class="contact-input"
+              />
+            </label>
+            <label class="contact-label">
+              <span>Ваш адрес *</span>
+              <input
+                type="text"
+                placeholder="Russia, Moscow"
+                class="contact-input"
+              />
+            </label>
+          </div>
+          <div class="cart__details-radios">
+            <div class="radio-wrapper">
+              <input checked id="radio-11" type="radio" name="fiveth" />
+              <label for="radio-11" class="radio-label">Нужен подъем</label>
+            </div>
+            <div class="radio-wrapper">
+              <input checked id="radio-12" type="radio" name="fiveth" />
+              <label for="radio-12" class="radio-label">Нужна установка</label>
+            </div>
+            <div class="radio-wrapper">
+              <input checked id="radio-13" type="radio" name="fiveth" />
+              <label for="radio-13" class="radio-label">Нужна утилизация</label>
+            </div>
+          </div>
+          <label class="contact-label last">
+            <span>Комментарий к заказу</span>
+            <textarea class="contact-textarea" placeholder="Комментарий к заказу"></textarea>
+          </label>
+        </div>
+      </div>
+      <div class="cart__checkout">
+        <h3 class="cart__checkout-title">Ваша корзина</h3>
+        <ul class="cart__checkout-items">
+          <li class="cart__checkout-item">
+            <span class="cart__checkout-name">Товары (2)</span>
+            <span class="cart__checkout-value">28 600 ₽</span>
+          </li>
+          <li class="cart__checkout-item">
+            <span class="cart__checkout-name">Скидка</span>
+            <span class="cart__checkout-value text-red">28 600 ₽</span>
+          </li>
+          <li class="cart__checkout-item">
+            <span class="cart__checkout-name">Доставка</span>
+            <span class="cart__checkout-value">Бесплатно</span>
+          </li>
+        </ul>
+        <div class="cart__checkout-total">
+          <h3 class="cart__checkout-title">Общая стоимость</h3>
+          <h3 class="cart__checkout-title">28 600 ₽</h3>
+        </div>
+        <button class="cart__checkout-btn">Оформить заказ</button>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container footer__container">
+      <div class="footer__linkcards">
+        <div class="footer__linkcard text-20">
+          <a href="./index.html">
+            <img src="./images/logo-white.png" alt="RUSSMALL.RU" class="footer__linkcard-logo" />
+          </a>
+          <a class="footer__linkcard-contact" href="tel:+74952155177" target="_blank">+7 (495) 215-51-77</a>
+          <a class="footer__linkcard-contact" href="mailto:info@russmall.ru" target="_blank">info@russmall.ru</a>
+        </div>
+        <div class="footer__linkcard text-16">
+          <a href="./products.html" class="footer__link">Доставка</a>
+          <a href="./products.html" class="footer__link">Прием товара</a>
+          <a href="./products.html" class="footer__link">Провер пикселей</a>
+          <a href="./products.html" class="footer__link">О нас</a>
+        </div>
+        <div class="footer__linkcard text-16">
+          <a href="./products.html" class="footer__link">Поставщикам</a>
+          <a href="./products.html" class="footer__link">Оптовым клиентам</a>
+          <a href="./products.html" class="footer__link">Пожаловаться руководству</a>
+        </div>
+        <div class="footer__linkcard">
+          <span class="footer__linkcard-contactitle text-16">У вас остались вопросы?</span>
+          <a href="./contact.html" class="footer__linkcard-contactbtn text-16">Оставить заявку</a>
+          <div class="footer__linkcard-social text-20">
+            <a href="https://www.whatsapp.com" target="_blank">
+              <i class="bi bi-whatsapp"></i>
+            </a>
+            <a href="https://web.telegram.org/k" target="_blank">
+              <i class="bi bi-telegram"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <p class="footer__copyright-text text-14">
+        Обращаем Ваше внимание на то, что данный интернет-сайт носит исключительно информационный характер и ни при
+        каких условиях информационные материалы и цены, размещенные на сайте, не являются публичной офертой,
+        определяемой положениями Статьи 437 Гражданского кодекса РФ.
+      </p>
+    </div>
+  </footer>
+
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
