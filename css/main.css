@@ -814,12 +814,12 @@ b.header__links-sublink {
   align-items: center;
 }
 
-.header .modal-content {
+.modal-content {
   max-height: 90vh;
   overflow: hidden;
 }
 
-.header .modal-content>.row {
+.modal-content>.row {
   max-height: 90vh;
   overflow: scroll;
   background: #fff;
