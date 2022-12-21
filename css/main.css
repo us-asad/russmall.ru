@@ -915,7 +915,7 @@ b.header__links-sublink {
 
   .products__item-img {
     height: 160px;
-    width: 40%;
+    width: 100%;
   }
 
   .products__item-details {

@@ -88,7 +88,8 @@ const handleProductsSwiper = () => {
           slidesPerView: 2
         },
         620: {
-          slidesPerView: 1
+          slidesPerView: 1,
+          spaceBetween: 10,
         }
       }
     });
