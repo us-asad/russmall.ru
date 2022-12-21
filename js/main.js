@@ -95,11 +95,30 @@ const handleProductsSwiper = () => {
   })
 }
 
+const handleSublinksDropDown = () => {
+  const dropDownBtns = document.querySelectorAll("button.header__mobile-link.drop-down");
+  dropDownBtns.forEach(btn => {
+    const dropDownIcon = btn.querySelector("i.bi-arrow-right");
+    const ul = btn.nextElementSibling.querySelector(".header__mobile-sublinks");
+
+    btn.addEventListener("click", () => {
+      if (btn.nextElementSibling.style.height) {
+        btn.nextElementSibling.style.height = ""
+        dropDownIcon.classList.remove("active");
+      } else {
+        btn.nextElementSibling.style.height = ul.clientHeight + "px"
+        dropDownIcon.classList.add("active");
+      }
+    });
+  })
+}
+
 window.addEventListener("DOMContentLoaded", () => {
   handleResponsiveNavbar();
   // handleProductsSlide();
   handleIncOrDecProduct();
   handleProductsSwiper();
+  handleSublinksDropDown();
 });
 
 
