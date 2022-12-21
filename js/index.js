@@ -49,7 +49,7 @@ const handleSlider = () => {
   const dots = $All(".slider__dot");
 
   const doSlide = () => {
-    if (slide < 0) slide = slides.length - 1;  
+    if (slide < 0) slide = slides.length - 1;
     else if (slide > slides.length - 1) slide = 0;
 
     slides.forEach(item => item.classList.remove("active"));
@@ -59,7 +59,7 @@ const handleSlider = () => {
     title.innerText = content[slide].title;
     text.innerText = content[slide].text;
     button.innerText = content[slide].button;
-    
+
   }
 
   prevBtn.addEventListener("click", () => {
@@ -73,6 +73,39 @@ const handleSlider = () => {
   });
 }
 
+const handleSublinksDropDown = () => {
+  const dropDownBtns = document.querySelectorAll("button.header__mobile-link");
+  dropDownBtns.forEach(btn => {
+    const dropDownIcon = btn.querySelector("i.bi-arrow-right");
+    const ul = btn.nextElementSibling.querySelector(".header__mobile-sublinks");
+
+    btn.addEventListener("click", () => {
+      if (btn.nextElementSibling.style.height) {
+        btn.nextElementSibling.style.height = ""
+        dropDownIcon.classList.remove("active");
+      } else {
+        btn.nextElementSibling.style.height = ul.clientHeight + "px"
+        dropDownIcon.classList.add("active");
+      }
+    });
+  })
+}
+
 window.addEventListener("DOMContentLoaded", () => {
-  handleSlider();
+  new Swiper('.swiper', {
+    autoplay: {
+      delay: 10000,
+    },
+    loop: true,
+    navigation: {
+      nextEl: '.swiper-button-prev',
+      prevEl: '.swiper-button-next',
+    },
+    pagination: {
+      el: '.swiper-pagination',
+    },
+  });
+
+  // handleSlider();
+  handleSublinksDropDown();
 });

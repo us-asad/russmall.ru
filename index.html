@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/css/swiper.css">
   <link rel="stylesheet" href="./css/main.css" />
   <link rel="stylesheet" href="./css/index.css" />
   <title>RUSSMALL.RU - Shop online in SECONDS!</title>
@@ -14,10 +15,10 @@
   <div class="container">
     <header class="header">
       <div class="header__top text-13 text-gray">
-        <div class="header__top-location">
+        <button data-bs-toggle="modal" data-bs-target="#location-modal" class="header__top-location">
           <i class="bi bi-geo-alt"></i>
           <span>Москва</span>
-        </div>
+        </button>
         <div class="header__top-links">
           <a href="./contact.html" class="header__top-link">Доставка</a>
           <a href="./contact.html" class="header__top-link">Сервис</a>
@@ -25,7 +26,7 @@
         </div>
       </div>
       <div class="header__main">
-        <a href="./products.html" class="header__main-logo">
+        <a href="./index.html" class="header__main-logo">
           <img src="./images/logo.png" alt="RUSSMALL.RU" class="header__main-logo-img" />
         </a>
         <form action="./products.html" class="header__main-search text-14">
@@ -58,15 +59,168 @@
         </div>
       </div>
       <div class="header__links text-15">
-        <a href="./products.html" class="header__links-openbtn">
+        <button class="header__links-openbtn">
           <i class="bi bi-text-left"></i>
           <span class="text-15">Все категории</span>
-        </a>
+        </button>
         <div class="header__links-wrapper">
           <a href="./products.html" class="header__link">Бытовая техника</a>
           <a href="./products.html" class="header__link">ТВ. аудио, видео</a>
           <a href="./products.html" class="header__link">Компьютерная техника</a>
           <a href="./products.html" class="header__link">Садовая техника и интсрументы</a>
+        </div>
+        <div class="header__links-shape"></div>
+        <div class="header__links-all-sublinks default-shadow">
+          <div class="header__links-sublinks row">
+            <div class="col-3 header__links-main-sublinks">
+              <ul class="header__links-sublinks">
+                <li class="header__links-sublink active">
+                  <a href="./products.html">Аудио/Видео</a>
+                </li>
+                <li class="header__links-sublink">
+                  <a href="./products.html">Крупная бытовая техника</a>
+                </li>
+                <li class="header__links-sublink">
+                  <a href="./products.html">Техника для кухни</a>
+                </li>
+                <li class="header__links-sublink">
+                  <a href="./products.html">Встраиваемая бытовая техника</a>
+                </li>
+                <li class="header__links-sublink">
+                  <a href="./products.html">Компьютерная техника</a>
+                </li>
+                <li class="header__links-sublink">
+                  <a href="./products.html">Дом и дача</a>
+                </li>
+                <li class="header__links-sublink">
+                  <a href="./products.html">Аудио/Видео</a>
+                </li>
+                <li class="header__links-sublink">
+                  <a href="./products.html">Крупная бытовая техника</a>
+                </li>
+                <li class="header__links-sublink">
+                  <a href="./products.html">Техника для кухни</a>
+                </li>
+                <li class="header__links-sublink">
+                  <a href="./products.html">Встраиваемая бытовая техника</a>
+                </li>
+                <li class="header__links-sublink">
+                  <a href="./products.html">Компьютерная техника</a>
+                </li>
+                <li class="header__links-sublink">
+                  <a href="./products.html">Дом и дача</a>
+                </li>
+                <li class="header__links-sublink">
+                  <a href="./products.html">Аудио/Видео</a>
+                </li>
+                <li class="header__links-sublink">
+                  <a href="./products.html">Крупная бытовая техника</a>
+                </li>
+                <li class="header__links-sublink">
+                  <a href="./products.html">Техника для кухни</a>
+                </li>
+                <li class="header__links-sublink">
+                  <a href="./products.html">Встраиваемая бытовая техника</a>
+                </li>
+                <li class="header__links-sublink">
+                  <a href="./products.html">Компьютерная техника</a>
+                </li>
+                <li class="header__links-sublink">
+                  <a href="./products.html">Дом и дача</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-8 row">
+              <div class="col-6 col-xl-4">
+                <ul class="header__links-sublinks">
+                  <b class="header__links-sublink">Хозяйственные товары</b>
+                  <li class="header__links-sublink">
+                    <a href="./products.html">Стремянки (2)</a>
+                  </li>
+                  <li class="header__links-sublink">
+                    <a href="./products.html">Газонокосилки   (22)</a>
+                  </li>
+                  <li class="header__links-sublink">
+                    <a href="./products.html">Инвентарь для уборки   (87)</a>
+                  </li>
+                  <li class="header__links-sublink">
+                    <a href="./products.html">Мусорные ведра и баки   (56)</a>
+                  </li>
+                  <li class="header__links-sublink">
+                    <a href="./products.html">Стремянки    (2)</a>
+                  </li>
+                  <li class="header__links-sublink">
+                    <a href="./products.html">Газонокосилки   (22)</a>
+                  </li>
+                  <li class="header__links-sublink">
+                    <a href="./products.html">Мусорные ведра и баки   (56)</a>
+                  </li>
+                  <b class="header__links-sublink">Хозяйственные товары</b>
+                  <li class="header__links-sublink">
+                    <a href="./products.html">Стремянки (2)</a>
+                  </li>
+                  <li class="header__links-sublink">
+                    <a href="./products.html">Газонокосилки   (22)</a>
+                  </li>
+                  <li class="header__links-sublink">
+                    <a href="./products.html">Инвентарь для уборки   (87)</a>
+                  </li>
+                  <li class="header__links-sublink">
+                    <a href="./products.html">Мусорные ведра и баки   (56)</a>
+                  </li>
+                  <li class="header__links-sublink">
+                    <a href="./products.html">Стремянки    (2)</a>
+                  </li>
+                  <li class="header__links-sublink">
+                    <a href="./products.html">Газонокосилки   (22)</a>
+                  </li>
+                  <li class="header__links-sublink">
+                    <a href="./products.html">Мусорные ведра и баки   (56)</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-6 col-xl-4">
+                <ul class="header__links-sublinks">
+                  <ul class="header__links-sublinks">
+                    <b class="header__links-sublink">Хозяйственные товары</b>
+                    <li class="header__links-sublink">
+                      <a href="./products.html">Стремянки (2)</a>
+                    </li>
+                    <li class="header__links-sublink">
+                      <a href="./products.html">Газонокосилки   (22)</a>
+                    </li>
+                    <li class="header__links-sublink">
+                      <a href="./products.html">Инвентарь для уборки   (87)</a>
+                    </li>
+                    <li class="header__links-sublink">
+                      <a href="./products.html">Мусорные ведра и баки   (56)</a>
+                    </li>
+                    <li class="header__links-sublink">
+                      <a href="./products.html">Стремянки    (2)</a>
+                    </li>
+                    <li class="header__links-sublink">
+                      <a href="./products.html">Газонокосилки   (22)</a>
+                    </li>
+                    <li class="header__links-sublink">
+                      <a href="./products.html">Мусорные ведра и баки   (56)</a>
+                    </li>
+                    <li class="header__links-sublink">
+                      <a href="./products.html">Мусорные ведра и баки   (56)</a>
+                    </li>
+                    <li class="header__links-sublink">
+                      <a href="./products.html">Стремянки    (2)</a>
+                    </li>
+                    <li class="header__links-sublink">
+                      <a href="./products.html">Газонокосилки   (22)</a>
+                    </li>
+                    <li class="header__links-sublink">
+                      <a href="./products.html">Мусорные ведра и баки   (56)</a>
+                    </li>
+                  </ul>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div id="mobile-nav" class="header__mobile closed">
@@ -75,20 +229,64 @@
             <i class="bi bi-x close-nav"></i>
           </button>
           <div class="header__mobile-links text-15">
-            <a href="./products.html" class="header__mobile-link">
+            <button class="header__mobile-link">
               <div class="header__mobile-link-starter">
                 <i class="bi bi-geo-alt text-blue"></i>
                 <span>Москва</span>
               </div>
               <i class="bi bi-arrow-right"></i>
-            </a>
-            <a href="./products.html" class="header__mobile-link">
+            </button>
+            <div class="header__mobile-sublinks-wrapper">
+              <ul class="header__mobile-sublinks">
+                <li class="header__mobile-sublink">Аудио</li>
+                <li class="header__mobile-sublink">Крупная бытовая техника</li>
+                <li class="header__mobile-sublink">Техника для кухни</li>
+                <li class="header__mobile-sublink">Встраиваемая бытовая техника</li>
+                <li class="header__mobile-sublink">Компьютерная техника</li>
+                <li class="header__mobile-sublink">Дом и дача</li>
+                <li class="header__mobile-sublink">Аудио</li>
+                <li class="header__mobile-sublink">Крупная бытовая техника</li>
+                <li class="header__mobile-sublink">Техника для кухни</li>
+                <li class="header__mobile-sublink">Встраиваемая бытовая техника</li>
+                <li class="header__mobile-sublink">Компьютерная техника</li>
+                <li class="header__mobile-sublink">Дом и дача</li>
+                <li class="header__mobile-sublink">Аудио</li>
+                <li class="header__mobile-sublink">Крупная бытовая техника</li>
+                <li class="header__mobile-sublink">Техника для кухни</li>
+                <li class="header__mobile-sublink">Встраиваемая бытовая техника</li>
+                <li class="header__mobile-sublink">Компьютерная техника</li>
+                <li class="header__mobile-sublink">Дом и дача</li>
+              </ul>
+            </div>
+            <button class="header__mobile-link">
               <div class="header__mobile-link-starter">
                 <i class="bi bi-text-left text-red"></i>
                 <span>Все категории</span>
               </div>
               <i class="bi bi-arrow-right"></i>
-            </a>
+            </button>
+            <div class="header__mobile-sublinks-wrapper">
+              <ul class="header__mobile-sublinks">
+                <li class="header__mobile-sublink">Аудио</li>
+                <li class="header__mobile-sublink">Крупная бытовая техника</li>
+                <li class="header__mobile-sublink">Техника для кухни</li>
+                <li class="header__mobile-sublink">Встраиваемая бытовая техника</li>
+                <li class="header__mobile-sublink">Компьютерная техника</li>
+                <li class="header__mobile-sublink">Дом и дача</li>
+                <li class="header__mobile-sublink">Аудио</li>
+                <li class="header__mobile-sublink">Крупная бытовая техника</li>
+                <li class="header__mobile-sublink">Техника для кухни</li>
+                <li class="header__mobile-sublink">Встраиваемая бытовая техника</li>
+                <li class="header__mobile-sublink">Компьютерная техника</li>
+                <li class="header__mobile-sublink">Дом и дача</li>
+                <li class="header__mobile-sublink">Аудио</li>
+                <li class="header__mobile-sublink">Крупная бытовая техника</li>
+                <li class="header__mobile-sublink">Техника для кухни</li>
+                <li class="header__mobile-sublink">Встраиваемая бытовая техника</li>
+                <li class="header__mobile-sublink">Компьютерная техника</li>
+                <li class="header__mobile-sublink">Дом и дача</li>
+              </ul>
+            </div>
             <a href="./contact.html" class="header__mobile-link">Доставка</a>
             <a href="./contact.html" class="header__mobile-link">Сервис</a>
             <a href="./contact.html" class="header__mobile-link">Дополнительные гарантии</a>
@@ -100,486 +298,624 @@
         </div>
       </div>
     </header>
-
-
-    <div class="slider">
-      <img src="./images/slider/5.jpg" alt="Slider Image" class="slider__img" />
-      <img src="./images/slider/4.jpg" alt="Slider Image" class="slider__img" />
-      <img src="./images/slider/3.jpg" alt="Slider Image" class="slider__img" />
-      <img src="./images/slider/2.jpg" alt="Slider Image" class="slider__img" />
-      <img src="./images/slider/1.jpg" alt="Slider Image" class="slider__img active" />
-      <img src="./images/slider/darkness.png" alt="Darkness BG" class="slider__darkness" />
-      <div class="slider__content font-semibold">
-        <h2 class="slider__content-title">Микроволновые печи 1</h2>
-        <p class="slider__content-text">
-          Современный дизайн и высокая мощность для повседневных задач или кулинарных шедевров 1
-        </p>
-        <div class="slider__btns">
-          <a href="./products.html" class="slider__content-btn">Смотреть все 1</a>
-          <button id="slide-left" class="slider__movebtn">
-            <i class="bi bi-chevron-left"></i>
-          </button>
-          <button id="slide-right" class="slider__movebtn">
-            <i class="bi bi-chevron-right"></i>
-          </button>
+    <div class="modal fade" id="location-modal" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content footer__modal-content">
+          <button type="button" class="btn-close footer__modal-close" data-bs-dismiss="modal"
+            aria-label="Close"></button>
+          <h3 class="modal-title fs-5 mt-1 mb-3 text-center">Выберете Ваш город</h3>
+          <div class="row">
+            <ul class="col-12 col-sm-6">
+              <button data-bs-dismiss="modal" aria-label="Close" class="modal-content-element">
+                <i class="bi bi-geo-alt text-blue active"></i>
+                <span>Москва</span>
+              </button>
+              <button data-bs-dismiss="modal" aria-label="Close" class="modal-content-element">
+                <i class="bi bi-geo-alt text-blue"></i>
+                <span>Санкт-Петербург</span>
+              </button>
+              <button data-bs-dismiss="modal" aria-label="Close" class="modal-content-element">
+                <i class="bi bi-geo-alt text-blue"></i>
+                <span>Новосибирск</span>
+              </button>
+              <button data-bs-dismiss="modal" aria-label="Close" class="modal-content-element">
+                <i class="bi bi-geo-alt text-blue"></i>
+                <span>Екатеринбург</span>
+              </button>
+              <button data-bs-dismiss="modal" aria-label="Close" class="modal-content-element">
+                <i class="bi bi-geo-alt text-blue"></i>
+                <span>Казань</span>
+              </button>
+            </ul>
+            <ul class="col-12 col-sm-6">
+              <button data-bs-dismiss="modal" aria-label="Close" class="modal-content-element">
+                <i class="bi bi-geo-alt text-blue"></i>
+                <span>Нижний Новгород</span>
+              </button>
+              <button data-bs-dismiss="modal" aria-label="Close" class="modal-content-element">
+                <i class="bi bi-geo-alt text-blue"></i>
+                <span>Челябинск</span>
+              </button>
+              <button data-bs-dismiss="modal" aria-label="Close" class="modal-content-element">
+                <i class="bi bi-geo-alt text-blue"></i>
+                <span>Красноярск</span>
+              </button>
+              <button data-bs-dismiss="modal" aria-label="Close" class="modal-content-element">
+                <i class="bi bi-geo-alt text-blue"></i>
+                <span>Самара</span>
+              </button>
+              <button data-bs-dismiss="modal" aria-label="Close" class="modal-content-element">
+                <i class="bi bi-geo-alt text-blue"></i>
+                <span>Уфа</span>
+              </button>
+            </ul>
+          </div>
         </div>
       </div>
-      <ul class="slider__dots"></ul>
+    </div>
+
+
+    <div class="slider swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="slider__content font-semibold">
+            <img src="./images/slider/1.jpg" alt="Slider Image" class="slider__img active" />
+            <img src="./images/slider/darkness.png" alt="Darkness BG" class="slider__darkness" />
+            <h2 class="slider__content-title">Микроволновые печи 1</h2>
+            <p class="slider__content-text">
+              Современный дизайн и высокая мощность для повседневных задач или кулинарных шедевров 1
+            </p>
+            <a href="./products.html" class="slider__content-btn main-btn">Смотреть все 1</a>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="slider__content font-semibold">
+            <img src="./images/slider/2.jpg" alt="Slider Image" class="slider__img active" />
+            <img src="./images/slider/darkness.png" alt="Darkness BG" class="slider__darkness" />
+            <h2 class="slider__content-title">Микроволновые печи 1</h2>
+            <p class="slider__content-text">
+              Современный дизайн и высокая мощность для повседневных задач или кулинарных шедевров 1
+            </p>
+            <a href="./products.html" class="slider__content-btn main-btn">Смотреть все 1</a>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="slider__content font-semibold">
+            <img src="./images/slider/3.jpg" alt="Slider Image" class="slider__img active" />
+            <img src="./images/slider/darkness.png" alt="Darkness BG" class="slider__darkness" />
+            <h2 class="slider__content-title">Микроволновые печи 1</h2>
+            <p class="slider__content-text">
+              Современный дизайн и высокая мощность для повседневных задач или кулинарных шедевров 1
+            </p>
+            <a href="./products.html" class="slider__content-btn main-btn">Смотреть все 1</a>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="slider__content font-semibold">
+            <img src="./images/slider/4.jpg" alt="Slider Image" class="slider__img active" />
+            <img src="./images/slider/darkness.png" alt="Darkness BG" class="slider__darkness" />
+            <h2 class="slider__content-title">Микроволновые печи 1</h2>
+            <p class="slider__content-text">
+              Современный дизайн и высокая мощность для повседневных задач или кулинарных шедевров 1
+            </p>
+            <a href="./products.html" class="slider__content-btn main-btn">Смотреть все 1</a>
+          </div>
+        </div>
+      </div>
+      <div class="slider__btns">
+        <button id="slide-left" class="slider__movebtn swiper-button-next">
+          <i class="bi bi-chevron-left"></i>
+        </button>
+        <button id="slide-right" class="slider__movebtn swiper-button-prev">
+          <i class="bi bi-chevron-right"></i>
+        </button>
+      </div>
+      <ul class="slider__dots swiper-pagination"></ul>
     </div>
     <div class="products">
       <h2 class="section__title">Выгодные предложения</h2>
-      <button id="products-moveright" class="products__movebtn">
-        <i class="bi bi-chevron-right"></i>
-      </button>
-      <button id="products-moveleft" class="products__movebtn">
-        <i class="bi bi-chevron-left"></i>
-      </button>
-      <div class="products__list">
-        <a href="./product.html" class="products__item">
-          <img
-            src="./images/product.png"
-            alt="Product"
-            class="products__item-img"
-          />
-          <h4 class="products__item-name">Водонагреватель Electrolux EWH 80 Formax</h4>
-          <div class="products__item-prices">
-            <p class="products__item-price">14 300 ₽</p>
-            <span class="products__item-nodiscount">18 000 ₽</span>
-          </div>
-          <div class="products__item-actions">
-            <button class="products__item-buybtn">Купить</button>
-            <button class="products__item-actionbtn">
-              <i class="bi bi-heart"></i>
-            </button>
-            <button class="products__item-actionbtn">
-              <i class="bi bi-list-columns"></i>
-            </button>
-          </div>
-        </a>
-        <a href="./product.html" class="products__item">
-          <img
-            src="./images/product.png"
-            alt="Product"
-            class="products__item-img"
-          />
-          <h4 class="products__item-name">Водонагреватель Electrolux EWH 80 Formax</h4>
-          <div class="products__item-prices">
-            <p class="products__item-price">14 300 ₽</p>
-            <span class="products__item-nodiscount">18 000 ₽</span>
-          </div>
-          <div class="products__item-actions">
-            <button class="products__item-buybtn">Купить</button>
-            <button class="products__item-actionbtn">
-              <i class="bi bi-heart"></i>
-            </button>
-            <button class="products__item-actionbtn">
-              <i class="bi bi-list-columns"></i>
-            </button>
-          </div>
-        </a>
-        <a href="./product.html" class="products__item">
-          <img
-            src="./images/product.png"
-            alt="Product"
-            class="products__item-img"
-          />
-          <h4 class="products__item-name">Водонагреватель Electrolux EWH 80 Formax</h4>
-          <div class="products__item-prices">
-            <p class="products__item-price">14 300 ₽</p>
-            <span class="products__item-nodiscount">18 000 ₽</span>
-          </div>
-          <div class="products__item-actions">
-            <button class="products__item-buybtn">Купить</button>
-            <button class="products__item-actionbtn">
-              <i class="bi bi-heart"></i>
-            </button>
-            <button class="products__item-actionbtn">
-              <i class="bi bi-list-columns"></i>
-            </button>
-          </div>
-        </a>
-        <a href="./product.html" class="products__item">
-          <img
-            src="./images/product.png"
-            alt="Product"
-            class="products__item-img"
-          />
-          <h4 class="products__item-name">Водонагреватель Electrolux EWH 80 Formax</h4>
-          <div class="products__item-prices">
-            <p class="products__item-price">14 300 ₽</p>
-            <span class="products__item-nodiscount">18 000 ₽</span>
-          </div>
-          <div class="products__item-actions">
-            <button class="products__item-buybtn">Купить</button>
-            <button class="products__item-actionbtn">
-              <i class="bi bi-heart"></i>
-            </button>
-            <button class="products__item-actionbtn">
-              <i class="bi bi-list-columns"></i>
-            </button>
-          </div>
-        </a>
-        <a href="./product.html" class="products__item">
-          <img
-            src="./images/product.png"
-            alt="Product"
-            class="products__item-img"
-          />
-          <h4 class="products__item-name">Водонагреватель Electrolux EWH 80 Formax</h4>
-          <div class="products__item-prices">
-            <p class="products__item-price">14 300 ₽</p>
-            <span class="products__item-nodiscount">18 000 ₽</span>
-          </div>
-          <div class="products__item-actions">
-            <button class="products__item-buybtn">Купить</button>
-            <button class="products__item-actionbtn">
-              <i class="bi bi-heart"></i>
-            </button>
-            <button class="products__item-actionbtn">
-              <i class="bi bi-list-columns"></i>
-            </button>
-          </div>
-        </a>
-        <a href="./product.html" class="products__item">
-          <img
-            src="./images/product.png"
-            alt="Product"
-            class="products__item-img"
-          />
-          <h4 class="products__item-name">Водонагреватель Electrolux EWH 80 Formax</h4>
-          <div class="products__item-prices">
-            <p class="products__item-price">14 300 ₽</p>
-            <span class="products__item-nodiscount">18 000 ₽</span>
-          </div>
-          <div class="products__item-actions">
-            <button class="products__item-buybtn">Купить</button>
-            <button class="products__item-actionbtn">
-              <i class="bi bi-heart"></i>
-            </button>
-            <button class="products__item-actionbtn">
-              <i class="bi bi-list-columns"></i>
-            </button>
-          </div>
-        </a>
-        <a href="./product.html" class="products__item">
-          <img
-            src="./images/product.png"
-            alt="Product"
-            class="products__item-img"
-          />
-          <h4 class="products__item-name">Водонагреватель Electrolux EWH 80 Formax</h4>
-          <div class="products__item-prices">
-            <p class="products__item-price">14 300 ₽</p>
-            <span class="products__item-nodiscount">18 000 ₽</span>
-          </div>
-          <div class="products__item-actions">
-            <button class="products__item-buybtn">Купить</button>
-            <button class="products__item-actionbtn">
-              <i class="bi bi-heart"></i>
-            </button>
-            <button class="products__item-actionbtn">
-              <i class="bi bi-list-columns"></i>
-            </button>
-          </div>
-        </a>
+      <div class="swiper__products" id="swiper-products-1">
+        <div class="swiper-wrapper products__list">
+          <a href="./product.html" class="products__item swiper-slide">
+            <img src="./images/product.png" alt="Product" class="products__item-img" />
+            <h4 class="products__item-name">Водонагреватель Electrolux EWH 80 Formax</h4>
+            <div class="products__item-prices">
+              <p class="products__item-price">14 300 ₽</p>
+              <span class="products__item-nodiscount">18 000 ₽</span>
+            </div>
+            <div class="products__item-actions">
+              <button class="products__item-buybtn">Купить</button>
+              <button class="products__item-actionbtn">
+                <i class="bi bi-heart"></i>
+              </button>
+              <button class="products__item-actionbtn">
+                <i class="bi bi-list-columns"></i>
+              </button>
+            </div>
+          </a>
+          <a href="./product.html" class="products__item swiper-slide">
+            <img src="./images/product.png" alt="Product" class="products__item-img" />
+            <h4 class="products__item-name">Водонагреватель Electrolux EWH 80 Formax</h4>
+            <div class="products__item-prices">
+              <p class="products__item-price">14 300 ₽</p>
+              <span class="products__item-nodiscount">18 000 ₽</span>
+            </div>
+            <div class="products__item-actions">
+              <button class="products__item-buybtn">Купить</button>
+              <button class="products__item-actionbtn">
+                <i class="bi bi-heart"></i>
+              </button>
+              <button class="products__item-actionbtn">
+                <i class="bi bi-list-columns"></i>
+              </button>
+            </div>
+          </a>
+          <a href="./product.html" class="products__item swiper-slide">
+            <img src="./images/product.png" alt="Product" class="products__item-img" />
+            <h4 class="products__item-name">Водонагреватель Electrolux EWH 80 Formax</h4>
+            <div class="products__item-prices">
+              <p class="products__item-price">14 300 ₽</p>
+              <span class="products__item-nodiscount">18 000 ₽</span>
+            </div>
+            <div class="products__item-actions">
+              <button class="products__item-buybtn">Купить</button>
+              <button class="products__item-actionbtn">
+                <i class="bi bi-heart"></i>
+              </button>
+              <button class="products__item-actionbtn">
+                <i class="bi bi-list-columns"></i>
+              </button>
+            </div>
+          </a>
+          <a href="./product.html" class="products__item swiper-slide">
+            <img src="./images/product.png" alt="Product" class="products__item-img" />
+            <h4 class="products__item-name">Водонагреватель Electrolux EWH 80 Formax</h4>
+            <div class="products__item-prices">
+              <p class="products__item-price">14 300 ₽</p>
+              <span class="products__item-nodiscount">18 000 ₽</span>
+            </div>
+            <div class="products__item-actions">
+              <button class="products__item-buybtn">Купить</button>
+              <button class="products__item-actionbtn">
+                <i class="bi bi-heart"></i>
+              </button>
+              <button class="products__item-actionbtn">
+                <i class="bi bi-list-columns"></i>
+              </button>
+            </div>
+          </a>
+          <a href="./product.html" class="products__item swiper-slide">
+            <img src="./images/product.png" alt="Product" class="products__item-img" />
+            <h4 class="products__item-name">Водонагреватель Electrolux EWH 80 Formax</h4>
+            <div class="products__item-prices">
+              <p class="products__item-price">14 300 ₽</p>
+              <span class="products__item-nodiscount">18 000 ₽</span>
+            </div>
+            <div class="products__item-actions">
+              <button class="products__item-buybtn">Купить</button>
+              <button class="products__item-actionbtn">
+                <i class="bi bi-heart"></i>
+              </button>
+              <button class="products__item-actionbtn">
+                <i class="bi bi-list-columns"></i>
+              </button>
+            </div>
+          </a>
+          <a href="./product.html" class="products__item swiper-slide">
+            <img src="./images/product.png" alt="Product" class="products__item-img" />
+            <h4 class="products__item-name">Водонагреватель Electrolux EWH 80 Formax</h4>
+            <div class="products__item-prices">
+              <p class="products__item-price">14 300 ₽</p>
+              <span class="products__item-nodiscount">18 000 ₽</span>
+            </div>
+            <div class="products__item-actions">
+              <button class="products__item-buybtn">Купить</button>
+              <button class="products__item-actionbtn">
+                <i class="bi bi-heart"></i>
+              </button>
+              <button class="products__item-actionbtn">
+                <i class="bi bi-list-columns"></i>
+              </button>
+            </div>
+          </a>
+          <a href="./product.html" class="products__item swiper-slide">
+            <img src="./images/product.png" alt="Product" class="products__item-img" />
+            <h4 class="products__item-name">Водонагреватель Electrolux EWH 80 Formax</h4>
+            <div class="products__item-prices">
+              <p class="products__item-price">14 300 ₽</p>
+              <span class="products__item-nodiscount">18 000 ₽</span>
+            </div>
+            <div class="products__item-actions">
+              <button class="products__item-buybtn">Купить</button>
+              <button class="products__item-actionbtn">
+                <i class="bi bi-heart"></i>
+              </button>
+              <button class="products__item-actionbtn">
+                <i class="bi bi-list-columns"></i>
+              </button>
+            </div>
+          </a>
+          <a href="./product.html" class="products__item swiper-slide">
+            <img src="./images/product.png" alt="Product" class="products__item-img" />
+            <h4 class="products__item-name">Водонагреватель Electrolux EWH 80 Formax</h4>
+            <div class="products__item-prices">
+              <p class="products__item-price">14 300 ₽</p>
+              <span class="products__item-nodiscount">18 000 ₽</span>
+            </div>
+            <div class="products__item-actions">
+              <button class="products__item-buybtn">Купить</button>
+              <button class="products__item-actionbtn">
+                <i class="bi bi-heart"></i>
+              </button>
+              <button class="products__item-actionbtn">
+                <i class="bi bi-list-columns"></i>
+              </button>
+            </div>
+          </a>
+          <a href="./product.html" class="products__item swiper-slide">
+            <img src="./images/product.png" alt="Product" class="products__item-img" />
+            <h4 class="products__item-name">Водонагреватель Electrolux EWH 80 Formax</h4>
+            <div class="products__item-prices">
+              <p class="products__item-price">14 300 ₽</p>
+              <span class="products__item-nodiscount">18 000 ₽</span>
+            </div>
+            <div class="products__item-actions">
+              <button class="products__item-buybtn">Купить</button>
+              <button class="products__item-actionbtn">
+                <i class="bi bi-heart"></i>
+              </button>
+              <button class="products__item-actionbtn">
+                <i class="bi bi-list-columns"></i>
+              </button>
+            </div>
+          </a>
+          <a href="./product.html" class="products__item swiper-slide">
+            <img src="./images/product.png" alt="Product" class="products__item-img" />
+            <h4 class="products__item-name">Водонагреватель Electrolux EWH 80 Formax</h4>
+            <div class="products__item-prices">
+              <p class="products__item-price">14 300 ₽</p>
+              <span class="products__item-nodiscount">18 000 ₽</span>
+            </div>
+            <div class="products__item-actions">
+              <button class="products__item-buybtn">Купить</button>
+              <button class="products__item-actionbtn">
+                <i class="bi bi-heart"></i>
+              </button>
+              <button class="products__item-actionbtn">
+                <i class="bi bi-list-columns"></i>
+              </button>
+            </div>
+          </a>
+
+        </div>
+        <button id="products-moveright" class="products__movebtn right">
+          <i class="bi bi-chevron-right"></i>
+        </button>
+        <button id="products-moveleft" class="products__movebtn left">
+          <i class="bi bi-chevron-left"></i>
+        </button>
       </div>
     </div>
 
     <div class="categories">
       <h2 class="section__title">Популярные категории</h2>
-      <div class="categories__list">
-        <a href="./products.html" class="categories__item">
-          <i class="bi bi-door-closed"></i>
-          <span class="categories__item-name">Бытовая техника</span>
-        </a>
-        <a href="./products.html" class="categories__item">
-          <i class="bi bi-tv"></i>
-          <span class="categories__item-name">ТВ, аудио, видео</span>
-        </a>
-        <a href="./products.html" class="categories__item">
-          <i class="bi bi-card-heading"></i>
-          <span class="categories__item-name">Садовая техника</span>
-        </a>
-        <a href="./products.html" class="categories__item">
-          <i class="bi bi-phone"></i>
-          <span class="categories__item-name">Компьютерная техника</span>
-        </a>
-        <a href="./products.html" class="categories__item">
-          <i class="bi bi-ev-station"></i>
-          <span class="categories__item-name">Электроинтсрумент</span>
-        </a>
-        <a href="./products.html" class="categories__item">
-          <i class="bi bi-door-closed"></i>
-          <span class="categories__item-name">Бытовая техника</span>
-        </a>
+      <div class="categories__list row g-3">
+        <div class="col-xxl-2 col-xl-3 col-lg-4 col-md-6 col-12 col">
+          <a href="./products.html" class="categories__item">
+            <i class="bi bi-door-closed"></i>
+            <span class="categories__item-name">Бытовая техника</span>
+          </a>
+        </div>
+        <div class="col-xxl-2 col-xl-3 col-lg-4 col-md-6 col-12 col">
+          <a href="./products.html" class="categories__item">
+            <i class="bi bi-tv"></i>
+            <span class="categories__item-name">ТВ, аудио, видео</span>
+          </a>
+        </div>
+        <div class="col-xxl-2 col-xl-3 col-lg-4 col-md-6 col-12 col">
+          <a href="./products.html" class="categories__item">
+            <i class="bi bi-card-heading"></i>
+            <span class="categories__item-name">Садовая техника</span>
+          </a>
+        </div>
+        <div class="col-xxl-2 col-xl-3 col-lg-4 col-md-6 col-12 col">
+          <a href="./products.html" class="categories__item">
+            <i class="bi bi-phone"></i>
+            <span class="categories__item-name">Компьютерная техника</span>
+          </a>
+        </div>
+        <div class="col-xxl-2 col-xl-3 col-lg-4 col-md-6 col-12 col">
+          <a href="./products.html" class="categories__item">
+            <i class="bi bi-ev-station"></i>
+            <span class="categories__item-name">Электроинтсрумент</span>
+          </a>
+        </div>
+        <div class="col-xxl-2 col-xl-3 col-lg-4 col-md-6 col-12 col">
+          <a href="./products.html" class="categories__item">
+            <i class="bi bi-door-closed"></i>
+            <span class="categories__item-name">Бытовая техника</span>
+          </a>
+        </div>
       </div>
     </div>
 
     <div class="products">
       <h2 class="section__title">Выгодные предложения</h2>
-      <button id="products-moveright" class="products__movebtn">
-        <i class="bi bi-chevron-right"></i>
-      </button>
-      <button id="products-moveleft" class="products__movebtn">
-        <i class="bi bi-chevron-left"></i>
-      </button>
-      <div class="products__list">
-        <a href="./product.html" class="products__item">
-          <img
-            src="./images/product.png"
-            alt="Product"
-            class="products__item-img"
-          />
-          <h4 class="products__item-name">Водонагреватель Electrolux EWH 80 Formax</h4>
-          <div class="products__item-prices">
-            <p class="products__item-price">14 300 ₽</p>
-            <span class="products__item-nodiscount">18 000 ₽</span>
-          </div>
-          <div class="products__item-actions">
-            <button class="products__item-buybtn">Купить</button>
-            <button class="products__item-actionbtn">
-              <i class="bi bi-heart"></i>
-            </button>
-            <button class="products__item-actionbtn">
-              <i class="bi bi-list-columns"></i>
-            </button>
-          </div>
-        </a>
-        <a href="./product.html" class="products__item">
-          <img
-            src="./images/product.png"
-            alt="Product"
-            class="products__item-img"
-          />
-          <h4 class="products__item-name">Водонагреватель Electrolux EWH 80 Formax</h4>
-          <div class="products__item-prices">
-            <p class="products__item-price">14 300 ₽</p>
-            <span class="products__item-nodiscount">18 000 ₽</span>
-          </div>
-          <div class="products__item-actions">
-            <button class="products__item-buybtn">Купить</button>
-            <button class="products__item-actionbtn">
-              <i class="bi bi-heart"></i>
-            </button>
-            <button class="products__item-actionbtn">
-              <i class="bi bi-list-columns"></i>
-            </button>
-          </div>
-        </a>
-        <a href="./product.html" class="products__item">
-          <img
-            src="./images/product.png"
-            alt="Product"
-            class="products__item-img"
-          />
-          <h4 class="products__item-name">Водонагреватель Electrolux EWH 80 Formax</h4>
-          <div class="products__item-prices">
-            <p class="products__item-price">14 300 ₽</p>
-            <span class="products__item-nodiscount">18 000 ₽</span>
-          </div>
-          <div class="products__item-actions">
-            <button class="products__item-buybtn">Купить</button>
-            <button class="products__item-actionbtn">
-              <i class="bi bi-heart"></i>
-            </button>
-            <button class="products__item-actionbtn">
-              <i class="bi bi-list-columns"></i>
-            </button>
-          </div>
-        </a>
-        <a href="./product.html" class="products__item">
-          <img
-            src="./images/product.png"
-            alt="Product"
-            class="products__item-img"
-          />
-          <h4 class="products__item-name">Водонагреватель Electrolux EWH 80 Formax</h4>
-          <div class="products__item-prices">
-            <p class="products__item-price">14 300 ₽</p>
-            <span class="products__item-nodiscount">18 000 ₽</span>
-          </div>
-          <div class="products__item-actions">
-            <button class="products__item-buybtn">Купить</button>
-            <button class="products__item-actionbtn">
-              <i class="bi bi-heart"></i>
-            </button>
-            <button class="products__item-actionbtn">
-              <i class="bi bi-list-columns"></i>
-            </button>
-          </div>
-        </a>
-        <a href="./product.html" class="products__item">
-          <img
-            src="./images/product.png"
-            alt="Product"
-            class="products__item-img"
-          />
-          <h4 class="products__item-name">Водонагреватель Electrolux EWH 80 Formax</h4>
-          <div class="products__item-prices">
-            <p class="products__item-price">14 300 ₽</p>
-            <span class="products__item-nodiscount">18 000 ₽</span>
-          </div>
-          <div class="products__item-actions">
-            <button class="products__item-buybtn">Купить</button>
-            <button class="products__item-actionbtn">
-              <i class="bi bi-heart"></i>
-            </button>
-            <button class="products__item-actionbtn">
-              <i class="bi bi-list-columns"></i>
-            </button>
-          </div>
-        </a>
-        <a href="./product.html" class="products__item">
-          <img
-            src="./images/product.png"
-            alt="Product"
-            class="products__item-img"
-          />
-          <h4 class="products__item-name">Водонагреватель Electrolux EWH 80 Formax</h4>
-          <div class="products__item-prices">
-            <p class="products__item-price">14 300 ₽</p>
-            <span class="products__item-nodiscount">18 000 ₽</span>
-          </div>
-          <div class="products__item-actions">
-            <button class="products__item-buybtn">Купить</button>
-            <button class="products__item-actionbtn">
-              <i class="bi bi-heart"></i>
-            </button>
-            <button class="products__item-actionbtn">
-              <i class="bi bi-list-columns"></i>
-            </button>
-          </div>
-        </a>
-        <a href="./product.html" class="products__item">
-          <img
-            src="./images/product.png"
-            alt="Product"
-            class="products__item-img"
-          />
-          <h4 class="products__item-name">Водонагреватель Electrolux EWH 80 Formax</h4>
-          <div class="products__item-prices">
-            <p class="products__item-price">14 300 ₽</p>
-            <span class="products__item-nodiscount">18 000 ₽</span>
-          </div>
-          <div class="products__item-actions">
-            <button class="products__item-buybtn">Купить</button>
-            <button class="products__item-actionbtn">
-              <i class="bi bi-heart"></i>
-            </button>
-            <button class="products__item-actionbtn">
-              <i class="bi bi-list-columns"></i>
-            </button>
-          </div>
-        </a>
+      <div class="swiper__products" id="swiper-products-2">
+        <div class="swiper-wrapper products__list">
+          <a href="./product.html" class="products__item swiper-slide">
+            <img src="./images/product.png" alt="Product" class="products__item-img" />
+            <h4 class="products__item-name">Водонагреватель Electrolux EWH 80 Formax</h4>
+            <div class="products__item-prices">
+              <p class="products__item-price">14 300 ₽</p>
+              <span class="products__item-nodiscount">18 000 ₽</span>
+            </div>
+            <div class="products__item-actions">
+              <button class="products__item-buybtn">Купить</button>
+              <button class="products__item-actionbtn">
+                <i class="bi bi-heart"></i>
+              </button>
+              <button class="products__item-actionbtn">
+                <i class="bi bi-list-columns"></i>
+              </button>
+            </div>
+          </a>
+          <a href="./product.html" class="products__item swiper-slide">
+            <img src="./images/product.png" alt="Product" class="products__item-img" />
+            <h4 class="products__item-name">Водонагреватель Electrolux EWH 80 Formax</h4>
+            <div class="products__item-prices">
+              <p class="products__item-price">14 300 ₽</p>
+              <span class="products__item-nodiscount">18 000 ₽</span>
+            </div>
+            <div class="products__item-actions">
+              <button class="products__item-buybtn">Купить</button>
+              <button class="products__item-actionbtn">
+                <i class="bi bi-heart"></i>
+              </button>
+              <button class="products__item-actionbtn">
+                <i class="bi bi-list-columns"></i>
+              </button>
+            </div>
+          </a>
+          <a href="./product.html" class="products__item swiper-slide">
+            <img src="./images/product.png" alt="Product" class="products__item-img" />
+            <h4 class="products__item-name">Водонагреватель Electrolux EWH 80 Formax</h4>
+            <div class="products__item-prices">
+              <p class="products__item-price">14 300 ₽</p>
+              <span class="products__item-nodiscount">18 000 ₽</span>
+            </div>
+            <div class="products__item-actions">
+              <button class="products__item-buybtn">Купить</button>
+              <button class="products__item-actionbtn">
+                <i class="bi bi-heart"></i>
+              </button>
+              <button class="products__item-actionbtn">
+                <i class="bi bi-list-columns"></i>
+              </button>
+            </div>
+          </a>
+          <a href="./product.html" class="products__item swiper-slide">
+            <img src="./images/product.png" alt="Product" class="products__item-img" />
+            <h4 class="products__item-name">Водонагреватель Electrolux EWH 80 Formax</h4>
+            <div class="products__item-prices">
+              <p class="products__item-price">14 300 ₽</p>
+              <span class="products__item-nodiscount">18 000 ₽</span>
+            </div>
+            <div class="products__item-actions">
+              <button class="products__item-buybtn">Купить</button>
+              <button class="products__item-actionbtn">
+                <i class="bi bi-heart"></i>
+              </button>
+              <button class="products__item-actionbtn">
+                <i class="bi bi-list-columns"></i>
+              </button>
+            </div>
+          </a>
+          <a href="./product.html" class="products__item swiper-slide">
+            <img src="./images/product.png" alt="Product" class="products__item-img" />
+            <h4 class="products__item-name">Водонагреватель Electrolux EWH 80 Formax</h4>
+            <div class="products__item-prices">
+              <p class="products__item-price">14 300 ₽</p>
+              <span class="products__item-nodiscount">18 000 ₽</span>
+            </div>
+            <div class="products__item-actions">
+              <button class="products__item-buybtn">Купить</button>
+              <button class="products__item-actionbtn">
+                <i class="bi bi-heart"></i>
+              </button>
+              <button class="products__item-actionbtn">
+                <i class="bi bi-list-columns"></i>
+              </button>
+            </div>
+          </a>
+          <a href="./product.html" class="products__item swiper-slide">
+            <img src="./images/product.png" alt="Product" class="products__item-img" />
+            <h4 class="products__item-name">Водонагреватель Electrolux EWH 80 Formax</h4>
+            <div class="products__item-prices">
+              <p class="products__item-price">14 300 ₽</p>
+              <span class="products__item-nodiscount">18 000 ₽</span>
+            </div>
+            <div class="products__item-actions">
+              <button class="products__item-buybtn">Купить</button>
+              <button class="products__item-actionbtn">
+                <i class="bi bi-heart"></i>
+              </button>
+              <button class="products__item-actionbtn">
+                <i class="bi bi-list-columns"></i>
+              </button>
+            </div>
+          </a>
+          <a href="./product.html" class="products__item swiper-slide">
+            <img src="./images/product.png" alt="Product" class="products__item-img" />
+            <h4 class="products__item-name">Водонагреватель Electrolux EWH 80 Formax</h4>
+            <div class="products__item-prices">
+              <p class="products__item-price">14 300 ₽</p>
+              <span class="products__item-nodiscount">18 000 ₽</span>
+            </div>
+            <div class="products__item-actions">
+              <button class="products__item-buybtn">Купить</button>
+              <button class="products__item-actionbtn">
+                <i class="bi bi-heart"></i>
+              </button>
+              <button class="products__item-actionbtn">
+                <i class="bi bi-list-columns"></i>
+              </button>
+            </div>
+          </a>
+          <a href="./product.html" class="products__item swiper-slide">
+            <img src="./images/product.png" alt="Product" class="products__item-img" />
+            <h4 class="products__item-name">Водонагреватель Electrolux EWH 80 Formax</h4>
+            <div class="products__item-prices">
+              <p class="products__item-price">14 300 ₽</p>
+              <span class="products__item-nodiscount">18 000 ₽</span>
+            </div>
+            <div class="products__item-actions">
+              <button class="products__item-buybtn">Купить</button>
+              <button class="products__item-actionbtn">
+                <i class="bi bi-heart"></i>
+              </button>
+              <button class="products__item-actionbtn">
+                <i class="bi bi-list-columns"></i>
+              </button>
+            </div>
+          </a>
+          <a href="./product.html" class="products__item swiper-slide">
+            <img src="./images/product.png" alt="Product" class="products__item-img" />
+            <h4 class="products__item-name">Водонагреватель Electrolux EWH 80 Formax</h4>
+            <div class="products__item-prices">
+              <p class="products__item-price">14 300 ₽</p>
+              <span class="products__item-nodiscount">18 000 ₽</span>
+            </div>
+            <div class="products__item-actions">
+              <button class="products__item-buybtn">Купить</button>
+              <button class="products__item-actionbtn">
+                <i class="bi bi-heart"></i>
+              </button>
+              <button class="products__item-actionbtn">
+                <i class="bi bi-list-columns"></i>
+              </button>
+            </div>
+          </a>
+          <a href="./product.html" class="products__item swiper-slide">
+            <img src="./images/product.png" alt="Product" class="products__item-img" />
+            <h4 class="products__item-name">Водонагреватель Electrolux EWH 80 Formax</h4>
+            <div class="products__item-prices">
+              <p class="products__item-price">14 300 ₽</p>
+              <span class="products__item-nodiscount">18 000 ₽</span>
+            </div>
+            <div class="products__item-actions">
+              <button class="products__item-buybtn">Купить</button>
+              <button class="products__item-actionbtn">
+                <i class="bi bi-heart"></i>
+              </button>
+              <button class="products__item-actionbtn">
+                <i class="bi bi-list-columns"></i>
+              </button>
+            </div>
+          </a>
+
+        </div>
+        <button id="products-moveright" class="products__movebtn right">
+          <i class="bi bi-chevron-right"></i>
+        </button>
+        <button id="products-moveleft" class="products__movebtn left">
+          <i class="bi bi-chevron-left"></i>
+        </button>
       </div>
     </div>
 
 
     <div class="all-categories">
       <h2 class="section__title">Все категории каталога</h2>
-      <div class="all-categories__list">
-        <div class="all-categories__item">
-          <h3 class="all-categories__item-title">Крупная бытовая техника</h3>
-          <div class="all-categories__item-links">
-            <a href="./products.html" class="all-categories__item-link">Холодильники (135)</a>
-            <a href="./products.html" class="all-categories__item-link">Морозильные камеры (74)</a>
-            <a href="./products.html" class="all-categories__item-link">Стиральные машины (213)</a>
-            <a href="./products.html" class="all-categories__item-link">Посудомоечные машины (98)</a>
-            <a href="./products.html" class="all-categories__item-more">
-              <span>Все товары</span>
-              <i class="bi bi-arrow-right"></i>
-            </a>
+      <div class="all-categories__list row">
+        <div class="col col-12 col-md-6 col-lg-4 col-lg-3">
+          <div class="all-categories__item">
+            <h3 class="all-categories__item-title">Крупная бытовая техника</h3>
+            <div class="all-categories__item-links">
+              <a href="./products.html" class="all-categories__item-link">Холодильники (135)</a>
+              <a href="./products.html" class="all-categories__item-link">Морозильные камеры (74)</a>
+              <a href="./products.html" class="all-categories__item-link">Стиральные машины (213)</a>
+              <a href="./products.html" class="all-categories__item-link">Посудомоечные машины (98)</a>
+              <a href="./products.html" class="all-categories__item-more">
+                <span>Все товары</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
           </div>
         </div>
-        <div class="all-categories__item">
-          <h3 class="all-categories__item-title">Крупная бытовая техника</h3>
-          <div class="all-categories__item-links">
-            <a href="./products.html" class="all-categories__item-link">Холодильники (135)</a>
-            <a href="./products.html" class="all-categories__item-link">Морозильные камеры (74)</a>
-            <a href="./products.html" class="all-categories__item-link">Стиральные машины (213)</a>
-            <a href="./products.html" class="all-categories__item-link">Посудомоечные машины (98)</a>
-            <a href="./products.html" class="all-categories__item-more">
-              <span>Все товары</span>
-              <i class="bi bi-arrow-right"></i>
-            </a>
+        <div class="col col-12 col-md-6 col-lg-4 col-lg-3">
+          <div class="all-categories__item">
+            <h3 class="all-categories__item-title">Крупная бытовая техника</h3>
+            <div class="all-categories__item-links">
+              <a href="./products.html" class="all-categories__item-link">Холодильники (135)</a>
+              <a href="./products.html" class="all-categories__item-link">Морозильные камеры (74)</a>
+              <a href="./products.html" class="all-categories__item-link">Стиральные машины (213)</a>
+              <a href="./products.html" class="all-categories__item-link">Посудомоечные машины (98)</a>
+              <a href="./products.html" class="all-categories__item-more">
+                <span>Все товары</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
           </div>
         </div>
-        <div class="all-categories__item">
-          <h3 class="all-categories__item-title">Крупная бытовая техника</h3>
-          <div class="all-categories__item-links">
-            <a href="./products.html" class="all-categories__item-link">Холодильники (135)</a>
-            <a href="./products.html" class="all-categories__item-link">Морозильные камеры (74)</a>
-            <a href="./products.html" class="all-categories__item-link">Стиральные машины (213)</a>
-            <a href="./products.html" class="all-categories__item-link">Посудомоечные машины (98)</a>
-            <a href="./products.html" class="all-categories__item-more">
-              <span>Все товары</span>
-              <i class="bi bi-arrow-right"></i>
-            </a>
+        <div class="col col-12 col-md-6 col-lg-4 col-lg-3">
+          <div class="all-categories__item">
+            <h3 class="all-categories__item-title">Крупная бытовая техника</h3>
+            <div class="all-categories__item-links">
+              <a href="./products.html" class="all-categories__item-link">Холодильники (135)</a>
+              <a href="./products.html" class="all-categories__item-link">Морозильные камеры (74)</a>
+              <a href="./products.html" class="all-categories__item-link">Стиральные машины (213)</a>
+              <a href="./products.html" class="all-categories__item-link">Посудомоечные машины (98)</a>
+              <a href="./products.html" class="all-categories__item-more">
+                <span>Все товары</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
           </div>
         </div>
-        <div class="all-categories__item">
-          <h3 class="all-categories__item-title">Крупная бытовая техника</h3>
-          <div class="all-categories__item-links">
-            <a href="./products.html" class="all-categories__item-link">Холодильники (135)</a>
-            <a href="./products.html" class="all-categories__item-link">Морозильные камеры (74)</a>
-            <a href="./products.html" class="all-categories__item-link">Стиральные машины (213)</a>
-            <a href="./products.html" class="all-categories__item-link">Посудомоечные машины (98)</a>
-            <a href="./products.html" class="all-categories__item-more">
-              <span>Все товары</span>
-              <i class="bi bi-arrow-right"></i>
-            </a>
+        <div class="col col-12 col-md-6 col-lg-4 col-lg-3">
+          <div class="all-categories__item">
+            <h3 class="all-categories__item-title">Крупная бытовая техника</h3>
+            <div class="all-categories__item-links">
+              <a href="./products.html" class="all-categories__item-link">Холодильники (135)</a>
+              <a href="./products.html" class="all-categories__item-link">Морозильные камеры (74)</a>
+              <a href="./products.html" class="all-categories__item-link">Стиральные машины (213)</a>
+              <a href="./products.html" class="all-categories__item-link">Посудомоечные машины (98)</a>
+              <a href="./products.html" class="all-categories__item-more">
+                <span>Все товары</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
           </div>
         </div>
-        <div class="all-categories__item">
-          <h3 class="all-categories__item-title">Крупная бытовая техника</h3>
-          <div class="all-categories__item-links">
-            <a href="./products.html" class="all-categories__item-link">Холодильники (135)</a>
-            <a href="./products.html" class="all-categories__item-link">Морозильные камеры (74)</a>
-            <a href="./products.html" class="all-categories__item-link">Стиральные машины (213)</a>
-            <a href="./products.html" class="all-categories__item-link">Посудомоечные машины (98)</a>
-            <a href="./products.html" class="all-categories__item-more">
-              <span>Все товары</span>
-              <i class="bi bi-arrow-right"></i>
-            </a>
+        <div class="col col-12 col-md-6 col-lg-4 col-lg-3">
+          <div class="all-categories__item">
+            <h3 class="all-categories__item-title">Крупная бытовая техника</h3>
+            <div class="all-categories__item-links">
+              <a href="./products.html" class="all-categories__item-link">Холодильники (135)</a>
+              <a href="./products.html" class="all-categories__item-link">Морозильные камеры (74)</a>
+              <a href="./products.html" class="all-categories__item-link">Стиральные машины (213)</a>
+              <a href="./products.html" class="all-categories__item-link">Посудомоечные машины (98)</a>
+              <a href="./products.html" class="all-categories__item-more">
+                <span>Все товары</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
           </div>
         </div>
-        <div class="all-categories__item">
-          <h3 class="all-categories__item-title">Крупная бытовая техника</h3>
-          <div class="all-categories__item-links">
-            <a href="./products.html" class="all-categories__item-link">Холодильники (135)</a>
-            <a href="./products.html" class="all-categories__item-link">Морозильные камеры (74)</a>
-            <a href="./products.html" class="all-categories__item-link">Стиральные машины (213)</a>
-            <a href="./products.html" class="all-categories__item-link">Посудомоечные машины (98)</a>
-            <a href="./products.html" class="all-categories__item-more">
-              <span>Все товары</span>
-              <i class="bi bi-arrow-right"></i>
-            </a>
-          </div>
-        </div>
-        <div class="all-categories__item">
-          <h3 class="all-categories__item-title">Крупная бытовая техника</h3>
-          <div class="all-categories__item-links">
-            <a href="./products.html" class="all-categories__item-link">Холодильники (135)</a>
-            <a href="./products.html" class="all-categories__item-link">Морозильные камеры (74)</a>
-            <a href="./products.html" class="all-categories__item-link">Стиральные машины (213)</a>
-            <a href="./products.html" class="all-categories__item-link">Посудомоечные машины (98)</a>
-            <a href="./products.html" class="all-categories__item-more">
-              <span>Все товары</span>
-              <i class="bi bi-arrow-right"></i>
-            </a>
-          </div>
-        </div>
-        <div class="all-categories__item">
-          <h3 class="all-categories__item-title">Крупная бытовая техника</h3>
-          <div class="all-categories__item-links">
-            <a href="./products.html" class="all-categories__item-link">Холодильники (135)</a>
-            <a href="./products.html" class="all-categories__item-link">Морозильные камеры (74)</a>
-            <a href="./products.html" class="all-categories__item-link">Стиральные машины (213)</a>
-            <a href="./products.html" class="all-categories__item-link">Посудомоечные машины (98)</a>
-            <a href="./products.html" class="all-categories__item-more">
-              <span>Все товары</span>
-              <i class="bi bi-arrow-right"></i>
-            </a>
+        <div class="col col-12 col-md-6 col-lg-4 col-lg-3">
+          <div class="all-categories__item">
+            <h3 class="all-categories__item-title">Крупная бытовая техника</h3>
+            <div class="all-categories__item-links">
+              <a href="./products.html" class="all-categories__item-link">Холодильники (135)</a>
+              <a href="./products.html" class="all-categories__item-link">Морозильные камеры (74)</a>
+              <a href="./products.html" class="all-categories__item-link">Стиральные машины (213)</a>
+              <a href="./products.html" class="all-categories__item-link">Посудомоечные машины (98)</a>
+              <a href="./products.html" class="all-categories__item-more">
+                <span>Все товары</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -610,7 +946,8 @@
         </div>
         <div class="footer__linkcard">
           <span class="footer__linkcard-contactitle text-16">У вас остались вопросы?</span>
-          <a href="./contact.html" class="footer__linkcard-contactbtn text-16">Оставить заявку</a>
+          <button data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+            class="footer__linkcard-contactbtn text-16">Оставить заявку</button>
           <div class="footer__linkcard-social text-20">
             <a href="https://www.whatsapp.com" target="_blank">
               <i class="bi bi-whatsapp"></i>
@@ -628,7 +965,22 @@
       </p>
     </div>
   </footer>
+  <div class="modal fade" id="staticBackdrop" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content footer__modal-content">
+        <button type="button" class="btn-close footer__modal-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <h3 class="modal-title fs-5 my-2 text-center">Оставить заявку</h3>
+        <div class="modal-body d-flex flex-column gap-3">
+          <input type="text" class="contact-input" id="footer-name" placeholder="Ваше имя">
+          <input type="tel" class="contact-input" id="footer-phone" placeholder="Ваш номер телефона">
+          <button type="button" class="main-btn btn mt-1" data-bs-dismiss="modal">Отправить</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="./js/main.js"></script>
   <script src="./js/index.js"></script>
 </body>

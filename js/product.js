@@ -81,8 +81,29 @@ const handleCommentSlider = () => {
   });
 }
 
+const handleCommentsSwiper = () => {
+  new Swiper('.swipper__comments', {
+    autoplay: true,
+    loop: true,
+    slidesPerView: 3,
+    navigation: {
+      nextEl: '.reviews-right-btn',
+      prevEl: '.reviews-left-btn',
+    },
+    breakpoints: {
+      1060: {
+        slidesPerView: 2
+      },
+      740: {
+        slidesPerView: 1
+      }
+    }
+  });
+}
+
 
 window.addEventListener("DOMContentLoaded", () => {
   handleProductSlider();
-  handleCommentSlider();
+  // handleCommentSlider();
+  handleCommentsSwiper();
 });

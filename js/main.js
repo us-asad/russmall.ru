@@ -7,7 +7,6 @@ const handleResponsiveNavbar = () => {
 
   openBtn.addEventListener("click", () => navbar.classList.toggle("closed"));
   navbar.addEventListener("click", e => {
-    console.log(e.target);
     if (e.target.id === "mobile-nav" || e.target.classList.contains("close-nav")) {
       navbar.classList.toggle("closed");
     }
@@ -63,10 +62,44 @@ const handleIncOrDecProduct = () => {
   })
 }
 
+const handleProductsSwiper = () => {
+  const swiperProducts = $All(".swiper__products");
+
+  swiperProducts.forEach(slider => {
+    console.log(slider.id);
+    new Swiper(`#${slider.id}`, {
+      autoplay: true,
+      loop: true,
+      navigation: {
+        nextEl: `#${slider.id} .products__movebtn.right`,
+        prevEl: `#${slider.id} .products__movebtn.left`,
+      },
+      slidesPerView: 5,
+      centeredSlides: true,
+      spaceBetween: 20,
+      breakpoints: {
+        1250: {
+          slidesPerView: 4
+        },
+        1020: {
+          slidesPerView: 3
+        },
+        900: {
+          slidesPerView: 2
+        },
+        620: {
+          slidesPerView: 1
+        }
+      }
+    });
+  })
+}
+
 window.addEventListener("DOMContentLoaded", () => {
   handleResponsiveNavbar();
-  handleProductsSlide();
+  // handleProductsSlide();
   handleIncOrDecProduct();
+  handleProductsSwiper();
 });
 
 

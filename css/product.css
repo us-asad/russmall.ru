@@ -2,6 +2,9 @@
   display: flex;
   justify-content: space-between;
   gap: 20px;
+  padding: 17px 20px;
+  box-shadow: 0px 0px 10px 0px #dfdfdf;
+  border-radius: 15px;
 }
 
 .product__gallery {
@@ -12,7 +15,7 @@
 .product__gallery-label-1 {
   position: absolute;
   top: 0;
-  left: 0;
+  left: -46px;
   padding: 14px 60px;
   color: #fff;
   background: #7FB1ED;
@@ -22,7 +25,7 @@
 .product__gallery-label-2 {
   position: absolute;
   top: 76px;
-  left: 26px;
+  left: -20px;
   padding: 13px 33px;
   background: #1FA4AC;
   color: #fff
@@ -36,7 +39,7 @@
   border-left: 26px solid transparent;
   border-top: 22px solid #4F78AA;
   left: 0;
-  bottom: -47%;
+  bottom: -43%;
 }
 
 .product__details {
@@ -171,7 +174,7 @@
 }
 
 .product__action-btn {
-  padding: 15px 31px;
+  padding: 10.5px 31px;
   border: 2px solid var(--main-red);
   background-color: var(--main-red);
   color: #fff;
@@ -260,8 +263,8 @@
 .filters__card-item:after {
   content: "";
   position: absolute;
-  left: 4px;
-  top: 4px;
+  left: 3.2px;
+  top: 3px;
   width: 11px;
   height: 11px;
   background-color: var(--main-red);
@@ -280,6 +283,9 @@
 
 .characters {
   margin-top: 110px;
+  padding: 17px 20px;
+  box-shadow: 0px 0px 10px 0px #dfdfdf;
+  border-radius: 15px;
 }
 
 .characters__title {
@@ -371,9 +377,9 @@
   position: absolute;
   top: 50%;
   translate: -50%;
-  right: 40px;
+  right: -2px;
   background-color: #fff;
-  padding: 8px 10px;
+  padding: 2.5px 8px;
   font-size: 22px;
   color: var(--main-blue);
   z-index: 6;
@@ -580,7 +586,7 @@
     justify-content: flex-start;
     padding-bottom: 10px;
   }
-  
+
   .characters__name,
   .characters__value {
     width: 100%;
@@ -589,58 +595,33 @@
 
   .reviews-right-btn,
   .reviews-left-btn {
-    right: -19px;
-    padding: 4px 6px;
+    right: -17px;
+    padding: 0.5px 6px;
     font-size: 22px;
   }
 
   .reviews-left-btn {
     right: initial;
-    left: -19px;;
+    left: 21px;
   }
 
   .review__content {
     line-height: 19px;
     font-size: 14px;
   }
-  
+
   .rates__title {
     padding: 0;
   }
+
+  .product__gallery-label-1 {
+    left: -38px;
+  }
+
+  .product__gallery-label-1::before {
+    left: 0px;
+    border-left: 19px solid transparent;
+    border-top: 13px solid #4F78AA;  
+    bottom: -40%;  
+  }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

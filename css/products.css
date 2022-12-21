@@ -1,9 +1,10 @@
 .tabs {
-  padding: 15px 80px 0 0;
+  padding: 15px 0 0 0;
   display: flex;
   gap: 40px;
   position: relative;
-  width: max-content;
+  width: 100%;
+  justify-content: space-between;
 }
 
 .tabs__item.active {
@@ -45,18 +46,10 @@
 
 
 .main-products {
-  display: flex;
-  margin-top: 50px;
-  gap: 40px;
+  /* margin-top: 0; */
+  padding-top: 30px;
+  /* gap: 40px; */
   margin-bottom: 100px;
-}
-
-.results {
-  width: 75%;
-}
-
-.filters {
-  width: 25%;
 }
 
 .filters__card {
@@ -104,8 +97,8 @@
 .filters__card-item:after {
   content: "";
   position: absolute;
-  left: 4px;
-  top: 4px;
+  left: 2.9px;
+  top: 2.9px;
   width: 11px;
   height: 11px;
   background-color: var(--main-red);
@@ -288,12 +281,12 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 20px;
+  padding: 20px 0;
   row-gap: 30px;
 }
 
 .result__products .products__item {
-  width: 32%;
+  display: block;
 }
 
 .about {
@@ -330,7 +323,6 @@
   color: var(--main-red)
 }
 
-
 @media (max-width: 900px) {  
   .results {
     width: 100%;
@@ -361,10 +353,6 @@
   .filters.open {
     display: block;
   }
-
-  .result__products .products__item {
-    width: 48%;
-  }
 }
 
 @media (max-width: 600px) {
@@ -372,6 +360,7 @@
     width: 100%;
     flex-direction: row;
     display: flex;
+    padding: 15px;
   }
 
   .tabs {
@@ -386,6 +375,14 @@
 
   .products__item-actionbtn {
     font-size: 20px;
+  }
+
+  .result__tags {
+    gap: 10px;
+  }
+
+  .result__tag {
+    padding: 5px;
   }
 }
 
