@@ -257,7 +257,12 @@
   border: 1px solid #999999;
   display: block;
   border-radius: 50%;
-  top: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.filters__card-item:after {
+  top: 7px !important;
 }
 
 .filters__card-item:after {

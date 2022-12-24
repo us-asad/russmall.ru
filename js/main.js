@@ -36,7 +36,7 @@ const handleProductsSlide = () => {
 
       list.style.transform = `translateX(-${(activeSlide - maxShow) * items[0].clientWidth}px)`;
     }
-    
+
     prevBtn.addEventListener("click", () => {
       activeSlide--;
       doSlide();
@@ -75,7 +75,6 @@ const handleProductsSwiper = () => {
         prevEl: `#${slider.id} .products__movebtn.left`,
       },
       slidesPerView: 5,
-      centeredSlides: true,
       spaceBetween: 20,
       breakpoints: {
         1250: {

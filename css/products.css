@@ -64,7 +64,12 @@
 .filters__card-radios {
   display: flex;
   flex-direction: column;
-  gap: 9px
+  gap: 9px;
+  margin-bottom: 0;
+}
+
+.filters__card-radios.ontoggle > .filters__card-radio:first-of-type {
+  padding-top: 9px;
 }
 
 .filters__card-radios input {

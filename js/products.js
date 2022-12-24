@@ -32,6 +32,16 @@ const handleRanges = () => {
 
 }
 
+const handleFiltersMoreRadio = () => {
+  const moreBtn = $("#filters-more-radio");
+  const moreFilters = $(".filters__card-radios.ontoggle");
+
+  moreBtn.addEventListener("click", () => {
+    moreFilters.classList.toggle("hidden");
+    moreBtn.innerText = moreFilters.classList.contains("hidden") ? "Все 123 варианта" : "Скрыть все 123 варианта"
+  })
+}
+
 const handleToggleFilterVisibility = () => {
   const openBtn = $("#open-filters");
   const closeBtn = $("#close-filters");
@@ -45,4 +55,5 @@ const handleToggleFilterVisibility = () => {
 window.addEventListener("DOMContentLoaded", () => {
   handleRanges();
   handleToggleFilterVisibility();
+  handleFiltersMoreRadio();
 })

@@ -93,6 +93,10 @@ ul {
   padding-left: 0;
 }
 
+.hidden {
+  display: none !important;
+}
+
 .routes {
   display: flex;
   gap: 5px;
@@ -761,8 +765,8 @@ b.header__links-sublink {
 .radio-label:after {
   content: "";
   position: absolute;
-  left: 4px;
-  top: 4px;
+  left: 2.9px;
+  top: 3.2px;
   width: 11px;
   height: 11px;
   background-color: var(--main-red);
@@ -953,6 +957,14 @@ b.header__links-sublink {
 
   .contact-label {
     width: 100%;
+  }
+  
+  .products__movebtn {
+    right: 1px;
+  }
+  
+  .products__movebtn#products-moveleft {
+    left: 1px;
   }
 }
 
