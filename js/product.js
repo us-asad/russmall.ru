@@ -101,9 +101,20 @@ const handleCommentsSwiper = () => {
   });
 }
 
+const handleToggleMoreCharacters = () => {
+  const moreCharacters = $("#more-characters");
+  const toggleMoreCharactersBtn = $("#toggle-more-characters");
+
+  toggleMoreCharactersBtn.addEventListener("click", () => {
+    moreCharacters.classList.toggle("hidden");
+    toggleMoreCharactersBtn.innerText = moreCharacters.classList.contains("hidden") ? "Больше параметров" : "скрыть дополнительные параметры"
+  })
+}
+
 
 window.addEventListener("DOMContentLoaded", () => {
   handleProductSlider();
   // handleCommentSlider();
   handleCommentsSwiper();
+  handleToggleMoreCharacters();
 });

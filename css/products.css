@@ -52,6 +52,14 @@
   margin-bottom: 100px;
 }
 
+.main-products > div:first-of-type {
+  background-color: #fff;
+  height: max-content;
+  padding-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 0px #ddd
+}
+
 .filters__card {
   margin-top: 20px;
 }
@@ -346,9 +354,9 @@
     overflow-y: auto;
     overflow-x: hidden;
     background-color: #fff;
-    z-index: 2;
     padding: 20px 30px 30px;
     display: none;
+    z-index: 24;
   }
 
   .filters__header {
@@ -357,6 +365,14 @@
 
   .filters.open {
     display: block;
+  }
+
+  .main-products {
+    padding-top: 0;
+  }
+
+  .main-products > div:last-of-type {
+    margin-top: 10px;
   }
 }
 

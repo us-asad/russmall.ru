@@ -501,7 +501,37 @@
           <span class="characters__value">HEPA H13</span>
         </li>
       </ul>
-      <span class="characters__more">Больше параметров</span>
+      <ul id="more-characters" class="characters__list hidden">
+        <li class="characters__item">
+          <span class="characters__name">Тип</span>
+          <span class="characters__value">традиционный</span>
+        </li>
+        <li class="characters__item">
+          <span class="characters__name">Тип уборки</span>
+          <span class="characters__value">сухая</span>
+        </li>
+        <li class="characters__item">
+          <span class="characters__name">Пылесборник</span>
+          <span class="characters__value">1.20 л</span>
+        </li>
+        <li class="characters__item">
+          <span class="characters__name">Фильтр тонкой очистки</span>
+          <span class="characters__value">есть</span>
+        </li>
+        <li class="characters__item">
+          <span class="characters__name">Потребляемая мощность</span>
+          <span class="characters__value">700 Вт</span>
+        </li>
+        <li class="characters__item">
+          <span class="characters__name">Уровень шума</span>
+          <span class="characters__value">77 дБ</span>
+        </li>
+        <li class="characters__item">
+          <span class="characters__name">Дополнительная информация</span>
+          <span class="characters__value">HEPA H13</span>
+        </li>
+      </ul>
+      <button id="toggle-more-characters" class="characters__more">Больше параметров</button>
     </div>
 
     <div class="rates">
@@ -520,7 +550,7 @@
       <a href="./contact.html" class="rates__btn main-btn">Написать отзыв</a>
     </div>
     <div class="reviews">
-      <button class="bi bi-chevron-left reviews-left-btn"></button>
+      <button class="bi bi-chevron-left reviews-left-btn on-mobile"></button>
       <button class="bi bi-chevron-right reviews-right-btn"></button>
       <div class="swipper__comments">
         <div class="swiper-wrapper reviews__list">
@@ -642,6 +672,7 @@
         </div>
       </div>
     </div>
+    <a href="./contact.html" class="rates__btn main-btn on-mobile">Написать отзыв</a>
 
     <div class="products">
       <h2 class="section__title">Выгодные предложения</h2>

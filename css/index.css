@@ -168,6 +168,10 @@
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  pointer-events: none;
 }
 
 .all-categories__item-links {
@@ -213,6 +217,34 @@
   .slider__content-btn {
     margin-left: auto;
     margin-right: auto;
+  }
+}
+
+@media (max-width: 700px) {
+  .all-categories__list {
+    row-gap: 5px;
+  }
+
+  .all-categories__items-wrapper {
+    height: 0;
+    overflow: hidden;
+    transition: .2s;
+  }
+
+  .all-categories__item-title {
+    pointer-events: auto;
+  }
+
+  .all-categories__item-title i {
+    transition: .3s;
+  }
+
+  .all-categories__item-title i.on-mobile {
+    display: block;
+  }
+
+  .all-categories__list > div.opened .all-categories__item-title i {
+    transform: rotate(180deg);
   }
 }
 

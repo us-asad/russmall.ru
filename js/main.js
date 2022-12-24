@@ -113,12 +113,29 @@ const handleSublinksDropDown = () => {
   })
 }
 
+const handleSublinksChange = () => {
+  const subLinks = $All(".header__links-sublinks > .col-8");
+  const sublinkBtns = $All(".header__links-sublink");
+
+  sublinkBtns.forEach((btn, i) => {
+    btn.addEventListener("click", () => {
+      const activeBtn = $(".header__links-sublink.active");
+      const activeSubLinks = $(".header__links-sublinks > .col-8.active");
+      activeBtn.classList.remove("active");
+      activeSubLinks.classList.remove("active");
+      btn.classList.add("active");
+      subLinks[i].classList.add("active");
+    })
+  })
+}
+
 window.addEventListener("DOMContentLoaded", () => {
   handleResponsiveNavbar();
   // handleProductsSlide();
   handleIncOrDecProduct();
   handleProductsSwiper();
   handleSublinksDropDown();
+  handleSublinksChange();
 });
 
 

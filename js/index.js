@@ -73,7 +73,20 @@ const handleSlider = () => {
   });
 }
 
-
+const handleAccordions = () => {
+  const categoriesList = $(".all-categories__list");
+  const categories = $All(".all-categories__list > div");
+  
+  categories.forEach(category => {
+    const toggleBtn = category.querySelector(".all-categories__item-title");
+    const linksContainer = category.querySelector(".all-categories__item-links");
+    
+    toggleBtn.addEventListener("click", () => {
+      category.classList.toggle("opened");
+      toggleBtn.nextElementSibling.style.height = category.classList.contains("opened") ? linksContainer.clientHeight + "px" : "0px";
+    })
+  })
+}
 
 window.addEventListener("DOMContentLoaded", () => {
   new Swiper('.swiper', {
@@ -91,4 +104,5 @@ window.addEventListener("DOMContentLoaded", () => {
   });
 
   // handleSlider();
+  handleAccordions();
 });

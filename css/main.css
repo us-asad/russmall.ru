@@ -46,6 +46,7 @@
 body {
   font-family: "Gilroy", serif;
   font-weight: 400;
+  background-color: #F5F5F5;
 }
 
 p,
@@ -506,6 +507,10 @@ a.header__mobile-link:last-of-type {
   gap: 10px;
 }
 
+.header__links-sublinks .col-8:not(.col-8.active) {
+  display: none;
+}
+
 .header__links-shape {
   position: absolute;
   width: 184px;
@@ -539,6 +544,29 @@ b.header__links-sublink {
   opacity: 1;
   pointer-events: auto;
   top: 90px;
+}
+
+.header .bi-person {
+  border: 2px solid #000;
+  border-radius: 40px;
+  width: 32px;
+  height: 32px;
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+.header__main-linkbtn:hover .bi-person {
+  border-color: var(--main-blue);
+  transition: .1s;
+}
+
+.header .bi-person::before {
+  font-size: 34px;
+  position: absolute;
+  top: 0px;
+  left: 51%;
+  transform: translateX(-50%);
 }
 
 
@@ -638,6 +666,7 @@ b.header__links-sublink {
   /* width: 275px; */
   cursor: pointer;
   transition: .5s;
+  background-color: #fff;
 }
 
 .products__item:hover {
@@ -685,6 +714,7 @@ b.header__links-sublink {
   display: flex;
   align-items: center;
   gap: 20px;
+  justify-content: center;
 }
 
 .products__item-buybtn {
@@ -710,6 +740,9 @@ b.header__links-sublink {
   border-radius: 50%;
   z-index: 5;
   background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .products__movebtn#products-moveleft {
@@ -958,11 +991,11 @@ b.header__links-sublink {
   .contact-label {
     width: 100%;
   }
-  
+
   .products__movebtn {
     right: 1px;
   }
-  
+
   .products__movebtn#products-moveleft {
     left: 1px;
   }

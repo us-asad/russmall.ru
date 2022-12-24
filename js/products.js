@@ -51,9 +51,19 @@ const handleToggleFilterVisibility = () => {
   closeBtn.addEventListener("click", () => filters.classList.toggle("open"));
 }
 
+const handleToggleExtraFilters = () => {
+  const extraFiltersToggler = $("#extra-filters-toggler");
+  const extraFilters = $("#extra-filters");
+
+  extraFiltersToggler.addEventListener("click", () => {
+    extraFilters.classList.toggle("hidden");
+    extraFiltersToggler.innerText = extraFilters.classList.contains("hidden") ? "Все 123 варианта" : "Скрыть все 123 варианта"
+  })
+}
 
 window.addEventListener("DOMContentLoaded", () => {
   handleRanges();
   handleToggleFilterVisibility();
   handleFiltersMoreRadio();
+  handleToggleExtraFilters();
 })
